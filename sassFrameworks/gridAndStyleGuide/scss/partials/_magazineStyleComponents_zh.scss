@@ -1,0 +1,1651 @@
+/* Style components to sit inside the magazine */
+body.lang-zh main {
+.magazineContent {
+	* {
+	font-family: $bodyCopy;
+	}
+   
+	// default h tags
+	h2, span.questionHeader {
+		font-family: $MSungPRC-Bold;
+		letter-spacing: -1px;
+	}
+	h2.small {
+		letter-spacing: 0;
+	}
+	
+
+	h3 {
+		font-family: $MSungPRC-Bold;
+		letter-spacing: -1px;
+	}
+
+	h4 {
+		font-family: $Hei;
+		font-weight: bold;
+		padding-top: 10px;
+	}
+
+	h5 {
+		font-family: $Hei;
+	}
+	
+	img.alignLeft {
+    	margin: 0 7px 0 0\9;
+    	padding: 0;
+	}
+	
+	div {
+		font-family: $Hei;
+		letter-spacing:0 !important;
+		a {
+				font-family: $Hei;
+				letter-spacing:0 !important;
+				em {
+					font-family: $Hei;
+					letter-spacing:0 !important;
+				}
+			}
+			
+		em {
+			a {
+				font-family: $Hei;
+				letter-spacing:0 !important;
+			}
+		}
+	}
+
+	// p tag
+	p {
+		font-family: $bodyCopy;
+		line-height: 23px;
+			
+		.firstletter {
+				display:inline;
+				font-family: $MSungPRC-Bold;
+				font-size:350%;
+				margin:8px 0 -5px 0;
+				padding:0 0.1em 0 0;
+				height: 0.84em;
+				line-height:0.72em;
+				float:left;
+				*line-height:0.85em; /* IE7 Only */
+
+				span {
+					font-family: $ModernNAP-Display;
+				}
+			}
+			
+			a {
+				font-family: $bodyCopy;
+				
+				em {
+					font-family: $bodyCopy;
+				}
+			}
+			
+			em {
+				a {
+					font-family: $bodyCopy;
+					font-style: italic;
+				}
+			}
+		
+			strong {
+				font-family: $Hei;
+			}
+		}
+
+	// p after p tag for indent
+	p + p {
+		margin-top: 0;
+		z-index: 1;
+		text-indent:0;
+		}
+	li{
+	font-size: 14px;
+	line-height:16px;
+	}
+	//white text
+	.white{
+		color:#fff!important;
+	}
+	.black{
+		color:#000!important;
+	}
+	// text right aligned
+	.right-align{
+	text-align:right!important;
+	}
+	// common style for making text center align
+	.textAlignCenter {
+		text-align: center;
+		
+	}
+// common style for making text left align
+	.textAlignLeft {
+		text-align: left!important;
+	}
+	.aboveImageText{
+	z-index:10;
+	}
+	
+	.magazineContentNap p {
+		font-family: $MSungPRC-Bold;
+    	font-size: 14px;
+    	line-height: 16px;
+	}
+	
+
+	
+	
+	// shop the story / look / trend buttons
+	.btnShopThe {
+		font-family: $Hei;
+		font-size: 13px;
+		font-weight:bold;
+		text-transform: uppercase;
+		margin: 0 0 0 -5px;
+		z-index: 1;
+		padding-top:8px;
+
+		a {
+			background: url($framework-image-path + 'styleGuide/btnShopThe_off.png') no-repeat right 4px;
+			color: #000;
+			text-decoration: none;
+			padding: 2px 15px 2px 5px;
+			line-height:16px;
+			font-size:14px;
+			font-family: $HeiBold;
+			letter-spacing: 0 !important;
+			font-weight:bold;
+			font-weight: bold\9;/* IE7 and IE8 Only */
+			*font-size:12px; /* IE7 Only */
+
+			&:hover {
+				background: url($framework-image-path + 'styleGuide/btnShopThe_on.png') no-repeat right 4px #000;
+				color: #fff;
+				text-decoration: none;
+				padding: 2px 15px 2px 5px;
+			}
+		}
+		
+	}
+	
+.btnShopTheTwoLine{
+	font-family: $Hei;
+	font-size:12px;
+	text-transform:uppercase;
+	margin:0 0 0 -5px;
+	z-index:1;
+	padding-top:10px;
+	float: none;
+	display: block;
+	a{
+		color:#000;
+		text-decoration:none;
+		font-size:14px;
+		line-height:16px;
+		span{
+			/* display:block; */
+			font-family: $HeiBold;
+			font-weight:bold;
+			letter-spacing:0 !important;
+			padding:3px 3px 0;
+			font-size:14px;
+			line-height:16px;
+			margin-top: 0px;
+			font-weight: bold\9;/* IE7 and IE8 Only */
+			}
+
+		span+span{
+			background:url("../images/styleGuide/btnShopThe_off.png") no-repeat right;
+			padding:2px 13px 1px 3px}
+			&:hover span {background:#000;color:#fff;
+			font-size:14px;
+			line-height:16px;}
+			&:hover span+span{ background:url("../images/styleGuide/btnShopThe_on.png") no-repeat right #000;
+			/*float: left;*/
+			margin-top: 0px;
+			font-size:14px;
+			line-height:16px;}
+	}
+}
+
+.btnShopTheTwoLineWhite{
+	font-family: $Hei;
+	font-size:12px;
+	text-transform:uppercase;
+	margin:0 0 0 -5px;
+	z-index:1;
+	padding-top:10px;
+	float: left;
+	display: block;
+	a{
+		color:#FFF;
+		text-decoration:none;
+		line-height:12px;
+		font-size:12px;
+		span{
+			/* display:block; */
+			clear:right;
+			padding:3px 3px 0;
+			font-weight: bold\9;/* IE7 and IE8 Only */
+			}
+
+		span+span{
+			background:url("../images/styleGuide/btnShopThe_on.png") no-repeat right;
+			padding:2px 13px 1px 3px}
+			&:hover span {background:#FFF;color:#000}
+			&:hover span+span{ background:url("../images/styleGuide/btnShopThe_off.png") no-repeat right #FFF;
+		    float: left;
+			margin-top: -1px}
+	}
+}
+
+
+	// content
+	.contentsPageHolder {
+
+		// h tag style applied to all h's inside styleTip box
+		@for $i from 2 through 5 {
+			h#{$i} {
+				font-family: $Hei;
+				font-size: 15px;
+				letter-spacing: -1px;
+				line-height: 13px;
+				text-transform: uppercase;
+			}
+		}
+	
+		p {
+			font-size: 10px;
+			line-height:12px;
+		}
+	}
+	
+	
+	
+	// shop the story / look / trend buttons white
+	.btnShopTheWhite {
+		font-family: $Hei;
+		font-size: 13px;
+		text-transform: uppercase;
+		margin: 0 0 0 -5px;
+		z-index: 1;
+		padding-top:15px;
+
+		a {
+			background: url($framework-image-path + 'styleGuide/btnShopThe_on.png') no-repeat right transparent;
+			color: #fff;
+			text-decoration: none;
+			padding: 0px 15px 0px 5px;
+			font-family: $HeiBold;
+			font-weight: bold\9;/* IE7 and IE8 Only */
+			&:hover {
+				background: url($framework-image-path + 'styleGuide/btnShopThe_off.png') no-repeat right #fff;
+				color: #000;
+				text-decoration: none;
+				padding: 0px 15px 0px 5px;
+			}
+		}
+	}
+
+
+
+
+	// question block
+	.questionBlock {
+		// put questions in strong change style
+		z-index: 1;
+
+		strong {
+			font-family: $Hei;
+			font-weight: normal;
+			font-size: 13px;
+			line-height:16px;
+		}
+		
+		// how to treat answers
+		p {
+			margin-bottom: 0px !important
+		}
+
+		p + p {
+			 text-indent: 0em;
+			 margin-bottom: 0px !important
+		}
+	}
+	
+	// Standard article text
+	// Includes first paragraph drop cap
+	.article {
+		margin-bottom: 0px !important;
+		font-family: $bodyCopy;
+		font-size: 13px;
+		line-height:23px;
+		letter-spacing:0 !important;
+		text-indent: 0;
+		
+		h3 {
+			font-family: $MSungPRC-Light;
+			padding-bottom:5px;
+			display:inline;
+		}
+
+		strong {
+			font-family: $Hei;
+		}
+		
+		p {
+			margin-bottom: 0px !important;
+			 font-family: $bodyCopy;
+			font-size: 13px;
+			line-height:23px;
+			text-indent: 0px;
+			letter-spacing:0 !important;
+			
+			a {
+				 font-family: $Hei;
+			}
+			
+			
+		}
+		
+		p.continue {
+			font-size: 13px;
+			line-height:23px;
+			text-indent: 0;
+			font-family: $bodyCopy;
+		}
+		
+		.dropcap2:first-letter {
+			font-family: $MSungPRC-Bold;
+			font-size: 290%;
+			margin: 8px 0 -5px 0;
+			padding: 0 0.1em 0 0;
+			height: 0.8em;
+			line-height: 0.65em;
+			float: left;
+			*line-height: 0.88em; /* IE7 Only */
+		}
+		
+		.dropcap3{
+		text-indent: 0;
+		}
+		
+		.dropcap3:first-letter {
+			
+			font-size:350%;
+			margin:8px 0 -5px 0;
+			padding:0 0.1em 0 0;
+			height: 0.84em;
+			line-height:0.72em;
+			float:left;
+			*line-height:0.85em; /* IE7 Only */
+			
+			
+		}
+		
+		p + p {
+			 text-indent: 28px;
+			 margin-bottom: 0px !important;
+		}
+	}
+	
+	
+	.rightText{
+	text-align: right;
+		h4{
+		 font-size:14px;
+		 line-height:14px;
+		 text-transform: uppercase;
+		 font-weight: normal;
+		 text-decoration: none;
+		}
+	}
+	.leftText{
+	text-align: left;
+	font-size:12px;
+	line-height: 14px;
+		h4{
+		 font-size:14px;
+		 line-height:14px;
+		 text-transform: uppercase;
+		 font-weight: normal;
+		 text-decoration: none;
+		}
+	}
+
+
+.theCredits{
+background:#ffffff;
+}
+	// top left slug
+	.slugLeft {
+		@extend .push-down-1;
+		@extend .push-right-2;
+		width:400px;
+
+		font-family: $MSungPRC-Bold;
+		font-size: 17px;
+		text-transform: uppercase;
+		z-index: 1;
+	}
+	
+	// top right slug
+	.slugRight {
+		@extend .push-down-1;
+		@extend .pull-left-2;
+		width:400px;
+		font-family: $MSungPRC-Bold;
+		font-size: 17px;
+		text-transform: uppercase;
+		z-index: 1;
+	}
+	
+	// Headline style
+	.sellHeadline {
+		font-size: 18px;
+		letter-spacing: -1px;
+		line-height: 13px;
+		text-transform:uppercase;
+		z-index: 1;
+	}
+	
+	// sell style
+	.sellCopy {
+		font-family: $MSungPRC-Bold;
+		font-size: 18px;
+		letter-spacing: 0 !important;
+		word-spacing: 0;
+		line-height: 21px;
+		z-index: 1;
+		vertical-align: bottom;
+		
+		span {
+            font-size: 18px;
+			font-family:$ModernNAP-SubheadItalic;
+			line-height: 21px;
+			display:inline;
+			letter-spacing: 0 !important;
+		}
+	}
+
+	// sell style
+	.sellCopyFonts {
+		font-family: $MSungPRC-Bold;
+		font-size: 18px;
+		letter-spacing: 0 !important;
+		word-spacing: 0;
+		line-height: 21px;
+		z-index: 1;
+		vertical-align: bottom;
+		
+		span {
+            font-size: 18px;
+			font-family:$ModernNAP-SubheadItalic;
+			letter-spacing: 0 !important;
+			line-height: 21px;
+			display:inline;
+		}
+	}
+	
+	// sell style small
+	.questionHeaderText{
+		font-family: $Hei;
+		font-size: 17px;
+		line-height: 19px;
+		z-index: 1;
+		padding-top: 2px;
+	}
+	.sellCopySmall{
+		font-family: $Hei;
+		font-size: 15px;
+		line-height: 16px;
+		z-index: 1;
+		padding-top: 2px;
+	}
+	// sell style small
+	.sellCopySmallDisplay{
+		font-family: $MSungPRC-Bold;
+		font-size: 17px;
+		line-height: 19px;
+		z-index: 1;
+		padding-top: 2px;
+	}
+	
+	// photography credit style
+	.photographyCredits {
+		font-family: $MSungPRC-Bold;
+		font-size: 12px;
+		letter-spacing: 0;
+		z-index: 1;
+		line-height:15px;
+		font-style: italics;
+		
+		p {
+			font-family: $MSungPRC-Bold;
+			font-size: 13px;
+			line-height:14px;
+			
+			span {
+				font-family: $ModernNAP-SubheadItalic;
+				letter-spacing:0 !important;
+			}
+		}
+		
+		span {
+			text-transform: uppercase;
+		}
+
+		// clear p stylings
+		p + p {
+			text-indent: 0em;
+		}
+	}
+	
+	
+	
+	// designer credit style
+	.designerCredit {
+		background-color: #000000;
+		color: #fff;
+		font-family: $Hei;
+		font-size: 10px;
+		line-height: 10px;
+		padding: 4px 5px 4px 5px;
+		text-transform: uppercase;
+		z-index: 1;
+	}
+	
+	// designer credit style
+	.designerCreditLowercase {
+		background-color: #000000;
+		color: #fff;
+		font-family: $Hei;
+		font-size: 10px;
+		line-height: 10px;
+		padding: 4px 5px 4px 5px;
+		z-index: 1;
+	}
+
+	
+	// button classes for small button icons
+	.btnInformation {
+		// class goes in div, click inside to an a tag
+		z-index: 1;
+
+		a {
+			@extend .span-1 !optional;
+			background: url($framework-image-path + 'styleGuide/btnInformation.png') no-repeat;
+			text-indent:-9999px;
+		}
+	}
+
+	.btnPlus {
+		// class goes in div, click inside to an a tag
+		z-index: 1;
+	
+		a {
+			@extend .span-1 !optional;
+			background: url($framework-image-path + 'styleGuide/btnPlus.png') no-repeat;
+			text-indent:-9999px;
+		}
+	}
+
+	.btnMinus {
+		// class goes in div, click inside to an a tag
+		z-index: 1;
+		a {
+			@extend .span-1 !optional;
+			background: url($framework-image-path + 'styleGuide/btnMinus.png') no-repeat;
+			text-indent:-9999px;
+		}
+	}
+	 
+	// quote block credit style
+	.quoteBlock, .quote, .quoteWhite {
+	
+		 z-index: 1;
+		 text-align: center;
+
+		 h5 {
+		 	font-family: $MSungPRC-Bold;
+		 	font-size: 16px;
+		 	line-height: 23px;
+		 	text-transform: uppercase;
+		 }
+
+		 em {
+			font-family: $MSungPRC-Quote;
+			font-size: 21px;
+			/* letter-spacing: -1px; */
+			line-height: 23px;
+			font-style: normal;
+			letter-spacing: 0 !important;
+			vertical-align: bottom;
+			
+			span {
+				font-family: "ModernNAP-DisplayItalic";
+				letter-spacing: 0 !important;
+				line-height: 23px;
+				display:inline;
+			}
+		 }
+		 
+		 p {
+			font-family: $MSungPRC-Quote;
+			font-size: 21px;
+			line-height: 23px;
+			font-style: normal;
+		 }
+
+		 // the quoted in a follow up p tag
+		 p + p {
+			font-family: $Hei;
+			font-size: 10px;
+			letter-spacing: 0px;
+			margin-bottom: 0px !important;
+			text-indent: 0em;
+			text-transform: uppercase;
+		}
+	}
+		
+		
+	// kicker boxout white opacity style
+	.kickerBlockWhite, .kickerBlockWhiteSolid {
+		line-height:12px;
+		z-index: 1;
+		padding:8px;
+				
+				
+		// h tag style applied to all h's inside kicker box, so any available to web production
+		@for $i from 2 through 5 {
+			h#{$i} {
+				text-transform: uppercase !important;
+				font-size: 12px;
+				line-height: 14px;
+				letter-spacing: 0px;
+				padding:0;
+			}
+			
+			h3 {
+				line-height: 15px;
+			}
+			
+			p{
+				font-size:11px;
+				line-height:14px;
+				letter-spacing: 0 !important;
+				font-family: $Hei;
+				
+				strong {
+					font-weight:bold;
+				}
+			}
+		}
+	
+	}
+
+	.kickerBlockWhite {
+		background: url($framework-image-path + 'styleGuide/whiteBG.png') repeat scroll 0 0 transparent;
+	}
+
+	.kickerBlockWhiteSolid {
+		background-color: #FFF;
+	}
+
+	// kicker boxout style
+	.kickerBlock {
+		background-color: #000000;
+		color: #fff;
+		z-index: 1;
+		padding:8px;
+
+		// h tag style applied to all h's inside kicker box, so any available to web production
+		@for $i from 2 through 5 {
+			h#{$i} {
+				text-transform: uppercase !important;
+				font-size: 12px;
+				line-height: 14px;
+				letter-spacing: 0px;
+				padding:0;
+			}
+			
+			p{
+				font-size:10px;
+				line-height:12px;
+			}
+		}
+
+		strong {
+			text-transform: uppercase;
+			font-weight: bold;
+		}
+
+		p {
+			font-size: 11px;
+			line-height:14px;
+			margin: 0;
+			padding: 0;
+			letter-spacing:0 !important;
+		}
+
+		p + p {
+			text-indent: 0em;
+		}
+	}
+	
+		 // Fashion credit
+	 .fashionCredit {
+		line-height:12px;
+		z-index: 1;
+		
+			h3 {
+				font-family: $Hei;
+    			font-size: 14px;
+    			line-height: 16px;
+			}
+				
+			p{
+				font-size:10px;
+				line-height:14px;
+				letter-spacing: 0 !important;
+				font-family: $Hei;
+			}
+		}
+	 
+	// styleTip boxout style
+	.styleTip {
+		text-align: center;
+		padding: 8px;
+		z-index: 1;
+		background: url($framework-image-path + 'styleGuide/whiteBG.png') repeat scroll 0 0 transparent;
+
+		// h tag style applied to all h's inside styleTip box
+		@for $i from 2 through 5 {
+			h#{$i} {
+				font-family: $Hei;
+				font-size: 15px;
+				letter-spacing: 0;
+				line-height: 13px;
+				text-transform: uppercase;
+			}
+		}
+		
+		h3 {
+			line-height: 17px;
+		}
+	
+		p {
+			font-size: 10px;
+			line-height: 14px;
+			letter-spacing: 0px;
+		}
+	}
+
+	.styleTipWhiteLeft {
+	    padding: 5px 0;
+	    text-align: left;
+	    z-index: 1;
+	    h3 {
+	    	font-family: "ModernNAP-Display";
+    		font-size: 18px;
+    		letter-spacing: -1px;
+    		line-height: 16px;
+    		text-transform: uppercase;
+	    }
+	}
+
+	.styleTipWhiteSmall p {
+	    font-size: 12px;
+		line-height: 14px;
+	    letter-spacing: 0;
+	}
+	
+	
+	.subHead {
+		
+		h3{
+			font-family:$MSungPRC-Bold;
+			font-size: 18px;
+			letter-spacing: 0px;
+			line-height: 18px;
+			text-transform: uppercase;
+			
+			span {
+				font-family: $ModernNAP-Text;
+			}
+		}
+		
+		h4{
+			font-family:$MSungPRC-Bold;
+			font-size: 13px;
+			letter-spacing: 0px;
+			line-height: 15px;
+			text-transform: uppercase;
+		}
+		
+	}
+	
+	
+	// padding box
+	.paddingBoxBlock {
+		padding: 5px;
+		z-index: 1;
+	
+		h4{
+			padding: 0;
+			font-family: $MSungPRC-Medium;
+			font-size: 24px;
+			font-weight:normal;
+			line-height: 24px;
+			letter-spacing: 0;
+		}
+		
+		p {
+			letter-spacing: 0 !important;
+			text-indent: 0;
+
+			strong {
+				font-family: $Hei;
+			}
+		
+		p+p {
+			text-indent: 28px !important;
+		}
+		
+	}
+		
+	}
+	// padding box
+	.paddingBoxBlockSmall {
+		padding: 5px;
+		z-index: 1;
+		background-color:#fff;
+	
+	}
+	 
+	// padding box - in white
+	.paddingBoxBlockWhite {
+		@extend .paddingBoxBlock;
+		background-color: #ffffff;
+		line-height: 18px;
+		h4{
+			padding-top: 0;
+		}
+		
+	}
+	
+	.paddingBoxBlockOpaque {
+	@extend .paddingBoxBlock;
+	background: url($framework-image-path + 'styleGuide/whiteBG.png') repeat scroll 0 0 transparent;
+	}
+	
+	// padding box - in black
+	.paddingBoxBlockBlack {
+		@extend .paddingBoxBlock;
+		background-color: #000000;
+	}
+	// padding box - in black
+	.paddingBoxBlockBlackSmall {
+		@extend .paddingBoxBlockSmall;
+		background-color: #000000;
+	}
+	
+	// background image
+	.backgroundImage {
+		height: $magazine-container-height;
+		width: $magazine-container-width;
+		z-index: 0;
+	}
+	
+	.clearBackground{
+	background-color:transparent!important;
+	}
+	 
+
+
+	// Travel Style Feature - question in Gill and answers Modern Nap
+	
+	.travelStyle {
+		font-size: 13px;
+		line-height: 23px;
+		letter-spacing:0px !important;
+		
+		text-indent:0;
+		
+		h2 {
+				font-family: $MSungPRC-Bold;
+				font-size: 20px;
+				line-height: 22px;
+				padding-bottom: 0;
+				text-transform: uppercase;
+				letter-spacing: 0 !important;
+				/* letter-spacing: 1px; */
+				
+				em {
+					letter-spacing:0px !important;
+					font-family:$MSungPRC-Bold;
+					
+					span {
+						letter-spacing:0 !important;
+						font-family:$ModernNAP-SubheadItalic;
+					}
+				}
+				
+				span {
+					font-family:$ModernNAP-Text;
+					letter-spacing:0 !important;
+				}
+			}
+			
+			h3 {
+				font-family: $MSungPRC-Medium;
+				font-size: 16px;
+				line-height: 17px;
+				padding-bottom: 0;
+				letter-spacing: -1px !important;;
+				text-transform: none;
+				
+				span {
+					font-family: $ModernNAP-SubheadItalic;
+					letter-spacing:0 !important;
+				}
+			}
+		
+			p, strong {
+				font-size: 13px;
+				line-height: 23px;
+				letter-spacing:0px !important;
+			}
+			
+			p {
+				text-indent:28px;
+				
+				em {
+					font-family: $MSungPRC-Medium;
+					font-style:normal;
+				}
+			}
+			
+			p+p {
+				 text-indent: 28px !important;
+			}
+			strong { font-family: $Hei; }
+			
+	}
+	
+	// The List feature with header and subhead underlined
+	
+	.theListUnderline {
+		h2 {
+				font-family: $Hei;
+				font-size: 20px;
+				line-height: 23px;
+				text-transform: uppercase;
+				letter-spacing: 0 !important;
+				font-weight:bold;
+				text-indent:20px;
+			}
+			
+			h3 {
+				font-family: $Hei;
+				font-size: 20px;
+				line-height: 23px;
+				text-transform: uppercase;
+				letter-spacing: 0 !important;
+				padding-bottom: 25px;
+			}
+		
+			p  {
+				font-size: 13px;
+				line-height: 23px;
+				letter-spacing: 0 !important;
+				
+				strong {
+					font-weight:bold;
+				}
+			}
+	}
+
+
+	// The List feature without header and subhead underlined
+	
+	.theList {
+		h2 {
+				font-family: $Hei;
+				font-size: 18px;
+				line-height: 17px;
+				text-transform: uppercase;
+				letter-spacing: 0px;
+			}
+			
+			h3 {
+				font-family: $Hei;
+				font-size: 18px;
+				line-height: 17px;
+				text-transform: uppercase;
+				letter-spacing: 0px;
+			}
+		
+			p  {
+				font-family: $Hei;
+				font-size: 12px;
+				line-height: 17px;
+			}
+	}
+	
+	// The List Feature - Headers in Nap Modern Display
+	
+	.theListDisplay {
+		h2 {
+				span {
+					font-family: $ModernNAP-SubheadItalic;
+					letter-spacing: 0px !important;
+					font-style: normal;
+				}
+				
+				font-family: $MSungPRC-Light;
+				font-size: 20px;
+				line-height: 23px;
+				text-transform: uppercase;
+				letter-spacing: 0px !important;
+				text-indent:20px;
+			}
+			
+			h3 {
+				font-family: $MSungPRC-Bold;
+				font-size: 20px;
+				line-height: 23px;
+				letter-spacing: 0px !important;
+				padding-bottom: 0;
+				text-transform: none;
+				font-weight:normal;
+				
+				span {
+					font-family: $ModernNAP-SubheadItalic;
+					letter-spacing: 0px !important;
+					font-style: normal;
+                    font-size: 20px;
+                    line-height: 23px;
+				}
+			}
+		
+			p  {
+				font-size: 13px;
+				line-height: 23px;
+				letter-spacing: 0px !important;
+				
+				strong {
+					font-size:14px;
+				}
+			}
+	}
+	
+	//list new style
+.greyBox {
+	margin-left:13px;
+	background: none repeat scroll 0% 0% #eef1f0;
+	padding: 0 8px 8px 6px;
+}
+	
+.theListGreyBox {
+	
+	.blackLine{
+		padding:6px 38px;
+		
+		span {
+			background-color: black;
+			display:block;
+			height:12px
+		}
+	}
+	
+	h2 {
+		    font-family: $Hei;
+    		font-size: 20px;
+    		letter-spacing: 0 !important;
+    		font-weight:bold;
+    		line-height: 23px;
+    		text-indent:20px;
+	}
+	
+	h3 {
+		    font-family: $Hei;
+    		font-size: 20px;
+			line-height: 23px;
+			text-transform: uppercase;
+			letter-spacing: 0 !important;
+	}
+	
+	p{
+		letter-spacing:0 !important;
+	}
+
+	
+}
+
+
+	// Specific block only used in Beauty Features
+
+	.beautyModern {
+		h2 {
+			font-family: $MSungPRC-Light;
+			font-size: 24px;
+			line-height: 25px;
+			text-transform: uppercase;
+			letter-spacing: 0px;
+			padding-bottom: 5px;
+			display:inline;
+			
+			em {
+				text-transform: none;
+			}
+		}
+
+		h3 {
+			font-family: $Hei;
+			font-size: 13px;
+			line-height: 17px;
+			letter-spacing: 0px;
+			text-transform: none;
+		}
+
+		p {
+			font-family: $Hei;
+			font-size: 13px;
+			line-height: 17px;
+		}
+	}
+
+
+	// Numbers only ever used in Beauty Features
+
+	.beautyNumbers {
+		h2 {
+			padding: 0 0 5px 0;
+			font-family: $Hei;
+			font-size: 24px;
+			line-height: 24px;
+			letter-spacing: 0;
+			text-transform: uppercase;
+		}
+
+		p {
+			font-family: $Hei;
+			font-size: 13px;
+			line-height: 17px;
+			letter-spacing: 0px;
+			text-indent: 28px;
+		}
+	}
+
+
+	// Block only used in The List Styles section
+
+	.theListStyles {
+		h4 {
+		  	font-family: $MSungPRC-Bold;
+			font-size: 12px;
+			line-height: 14px;
+			text-transform: uppercase;
+
+				em {
+				font-family: $MSungPRC-Bold;
+				font-style: normal;
+				}
+		}
+	}
+
+		.theListLook {
+		h4 {
+		  	font-family: $MSungPRC-Bold;
+			font-size: 14px;
+			line-height: 16px;
+			font-weight:normal;
+			text-transform: uppercase;
+
+				span {
+					font-family: $ModernNAP-Subhead;
+					letter-spacing:0 !important;
+				}
+				
+				em {
+				font-family: $MSungPRC-Bold;
+				font-style: normal;
+				}
+		}
+	}
+
+	// styles specific to Rethink and Runway to Real Life feautures
+
+	.rethinkSideBar, .runwayToRealLife {
+	
+		h3 {
+		font-family: $MSungPRC-Bold;
+		font-size: 16px;
+		line-height: 20px;
+		text-transform: uppercase;
+		
+			span{
+				font-family:$ModernNAP-Text;
+				letter-spacing: 0 !important;
+			}
+
+			em {
+			font-family: $MSungPRC-Bold;
+			text-transform: none;
+			font-style: normal;
+			}
+		}
+
+			p {
+				font-family: $Hei;
+				font-size: 10px;
+				text-transform: uppercase;
+				line-height: 14px;
+				letter-spacing:0 !important;
+				*font-size:9px; /* IE7 Only */
+			}
+	}
+
+	// Box Out style for transparent boxes with padding
+
+	.boxOut {
+		padding: 8px;
+		margin: 0;
+		background: url($framework-image-path + 'styleGuide/whiteBG.png') repeat scroll 0 0 transparent;
+	}
+
+	// Styles specific to interviews
+
+	.interviewBox {
+
+			h2 {
+			font-family: $MSungPRC-Bold;
+			font-size: 24px;
+			line-height: 24px;
+			text-transform: uppercase;
+			letter-spacing: 0;
+			*font-size:24px; /* IE7 Only */
+		}
+
+		p {
+			font-family: $Hei;
+			font-size: 14px;
+			line-height: 21px;
+			*font-size:13px; /* IE7 Only */
+		}
+	}
+
+	// 24/7 Feature specific styles
+
+	.twenty47Box {
+
+		h2 {
+			font-family: $Hei;
+			font-size: 14px;
+			line-height: 16px;
+			text-transform: uppercase;
+			letter-spacing: 0;
+			font-weight:bold;
+		}
+
+		h3 {
+			font-family: $Hei;
+			font-size: 12px;
+			line-height: 13px;
+			text-transform: uppercase;
+			letter-spacing: 0;
+		}
+
+		p {
+			font-family: $Hei;
+			font-size: 10px;
+			line-height: 13px;
+		}
+	}
+
+	.mastHeadHeader, .mastHeadSubHeader {
+
+		h2 {
+			font-family: $ModernNAP-Text !important;
+			font-size: 14px;
+			line-height: 16px;
+			text-transform: uppercase;
+			letter-spacing: 0;
+		}
+
+		h3 {
+			font-family: $MSungPRC-Bold;
+			font-size: 12px;
+			line-height: 14px;
+			text-transform: none;
+			letter-spacing: 0;
+			padding-bottom: 10px;
+		}
+
+		h4 {
+			font-family: $MSungPRC-Bold;
+			font-size: 12px;
+			line-height: 14px;
+			text-transform: uppercase;
+			font-weight: normal;
+			letter-spacing: 0;
+		}
+
+		p {
+			font-family: $MSungPRC-Bold;
+			font-size: 10px;
+			line-height: 14px;
+			height:14px;
+				strong {
+					text-transform: uppercase;
+					font-family:$ModernNAP-Text;
+					font-weight: normal;
+					letter-spacing: 0 !important;
+				}
+		}
+
+	}
+
+	.mastHeadFooter {
+
+		p {
+			font-family: $ModernNAP-Text !important;
+			font-size: 10px;
+			line-height: 12px;
+			letter-spacing:0 !important;
+
+				strong {
+					font-family:$ModernNAP-Text !important;
+					text-transform: uppercase;
+					font-weight: normal;
+				}
+				
+		}
+
+	}
+
+	// Contents Page
+
+	.editorSignature {
+
+		padding-left: 10px;
+
+		p {
+			font-family: $Hei;
+			font-size: 10px;
+			line-height: 10px;
+			text-transform: uppercase;
+		}
+	}
+
+	.contentsList {
+
+		ul {
+			li {
+				display: block;
+				float: left;
+				clear: right;
+				*clear: both; /* IE7 Only */
+				*width: 190px; /* IE7 Only */
+
+				span {
+    				font-size: 15px;
+    				letter-spacing: -1px !important;
+    				line-height: 17px;
+    				margin: 0;
+    				padding: 1px 0 0;
+    				text-align: right;
+    				width: 15px;
+					font-family:$ModernNAP-Display;
+				p {
+					a {
+						font-family: $bodyCopy;
+					}
+				}
+			}
+
+			p {
+				font-family: $Hei;
+    			font-size: 13px;
+    			line-height: 17px;
+    			margin-left: 6px;
+    			text-transform: none;
+
+					strong {
+						font-size: 14px;
+						line-height: 17px;
+						text-transform: uppercase;
+					}
+				}
+			}
+		}
+
+	}
+
+	.altCaption {
+		padding:5px;
+
+		h5 {
+			font-family: $Hei;
+			font-size: 12px;
+			line-height: 13px;
+			text-transform: uppercase;
+		}
+
+		p {
+			font-family: $Hei;
+			font-size: 10px;
+			line-height: 13px;
+		}
+	}
+
+	.contentsHeader {
+
+		h2 {
+			font-family: $MSungPRC-Light;
+			font-size: 42px;
+			line-height: 42px;
+			text-transform: none;
+			letter-spacing: -2px;
+		}
+	}
+
+	.edLetter {
+		padding-left: 10px;
+	}
+	
+	//override old editor letter content list style
+	.edLetterList{
+	border-left: 1px solid #999999;
+    padding-left: 10px;
+    
+		.contentsHeader{
+			margin-bottom:10px;
+		}
+		
+		.contentsList ul li{
+			margin-bottom:12px;
+			position:relative;
+		}
+		
+		.contentsList ul li.last{
+			margin-bottom:0;
+		}
+		
+		.contentsList ul li p{
+			padding-bottom:0;
+		}
+	}
+
+
+	.interviewStyles {
+		h3 {
+			font-family: $MSungPRC-Bold !important;
+			font-size: 16px;
+			line-height: 18px;
+			
+			span {
+				font-family: $ModernNAP-Subhead;
+				letter-spacing:0 !important;
+			}
+			
+			em {
+				font-family: $MSungPRC-Bold;
+				font-style: normal;
+				text-transform: none;
+			}
+		}
+	}
+	
+.trendReport {
+	h2 {
+		font-family: $MSungPRC-Bold;
+		font-size: 36px;
+		line-height: 36px;
+	}
+
+	h4 {
+		  	font-family: $MSungPRC-Bold;
+			font-size: 14px;
+			line-height: 14px;
+			text-transform: uppercase;
+			padding: 0px!important;
+
+				em {
+				font-family: $MSungPRC-Bold;
+				font-style: normal;
+				}
+		}
+}
+
+.trendSideBar {
+		h4 {
+		  	font-family: $MSungPRC-Bold;
+			font-size: 15px;
+			line-height: 14px;
+			text-transform: uppercase;
+			padding:5px 0 0 0;
+
+				em {
+				font-family: $MSungPRC-Bold;
+				font-style: normal;
+				}
+		}
+
+		p {
+			font-family: $bodyCopy;
+			font-size: 10px;
+			line-height: 12px;
+			padding: 5px;
+		}
+}
+
+// Beauty Drop Cap
+
+.powerList {
+		
+		h2.dropcapNumber {
+			font-family: $ModernNAP-DisplayItalic;
+			font-size: 480%;
+			margin: 0 0 -5px 0;
+			padding: 0 0.1em 0 0;
+			height: 0.6em;
+			line-height: 0.75em;
+			float: left;
+			*line-height: 0.7em; /* IE7 Only */
+		}
+
+		h3 {
+			font-family: $MSungPRC-Bold;
+			font-size: 20px;
+			line-height: 20px;
+			letter-spacing: 0;
+			margin-bottom: 0px !important;
+			text-transform: none;
+
+				em {
+					font-family: $MSungPRC-Bold;
+					font-size: 16px;
+					line-height: 17px;
+					font-style: normal;
+					letter-spacing: 0;
+					text-transform: none;
+				}
+				
+				span{
+					font-family:$ModernNAP-Display;
+				}
+		}
+	}
+// shoot Style V2 march
+
+.shootNew {
+	
+		h4{
+			font-family: $ModernNAP-Display;
+			font-size: 21px;
+			line-height: 16px;
+			text-transform: none;
+			letter-spacing: 0px;
+		}
+
+		p{
+		font-size:10px;
+		line-height:14px;
+		}
+
+
+}
+	
+//interview
+	.coverStoryInterview{
+		p {
+			letter-spacing:0 !important;
+		}
+	}
+	
+//cover story questions and answers
+
+		.coverQuestion {
+	
+			h3 {
+				font-family: $Hei;
+				font-size: 13px;
+				line-height: 23px;
+				font-style: normal;
+				letter-spacing:0px;
+				text-transform:none;
+				font-weight: bold;
+				}
+		
+		}
+	
+//text shadow
+	.greyshadow {
+		text-shadow: 1px 1px #777777;
+	}
+	
+	.shoot {
+		h3{
+			font-size:18px;
+			line-height:17px;
+			font-family:$ModernNAP-SubheadItalic;
+			text-transform: none;
+		}
+	}
+	
+	//CTA under Boost style
+	.theBoost{
+		.btnShopThe{
+			padding-top: 15px;
+		}
+	}
+}
+
+
+}

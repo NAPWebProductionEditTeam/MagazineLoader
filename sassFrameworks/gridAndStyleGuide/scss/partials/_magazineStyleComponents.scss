@@ -1,0 +1,1640 @@
+/* Style components to sit inside the magazine */ 
+.magazineContent {
+	
+	em.small {
+	font-size:12px;
+	line-height:14px;
+	}
+
+	// h1 used to hide text and replace inline with image
+	h1 {
+		z-index: 1;
+	}
+   
+	// default h tags
+	h2, span.questionHeader {
+		font-family: $ModernNAP-DisplayItalic; 
+		font-size: 28px;
+		letter-spacing: -1px;
+		font-weight: normal;
+		text-transform: none;
+		line-height: 24px;
+		z-index: 1;
+	}
+
+	h2.medium {
+		font-size: 21px;
+		line-height: 21px;
+	}
+	h2.small {
+		font-size: 18px;
+		letter-spacing: 0;
+		line-height: 18px;
+	}
+	
+	
+
+	h3 {
+		font-family: $ModernNAP-Display; 
+		font-size: 28px;
+		letter-spacing: -1px; 
+		text-transform: uppercase; 
+		line-height: 24px;
+		font-weight: normal;
+		z-index: 1;
+	} 
+	h3.medium {
+		font-size: 17px;
+		line-height: 18px;
+		text-transform: none;
+	}
+	h3.large {
+		font-size: 42px;
+		line-height: 35px;
+		text-transform: none;
+	} 
+
+	h4 {
+		font-family: $bodyCopy; 
+		font-size: 14px;
+		text-transform: uppercase;
+		font-weight: normal;
+		z-index: 1;
+		line-height:15px; 
+	}
+
+	h4.underline {
+	text-decoration: underline;
+	}
+	
+
+	h5 {
+		font-family: $bodyCopy; 
+		font-size: 13px;
+		text-transform: uppercase;
+		text-decoration: none;
+		font-weight: normal;
+		z-index: 1;
+	}
+
+	// p tag
+	p {
+		font-family: $bodyCopy; 
+		font-size: 13px;
+		line-height: 17px;
+		margin-bottom: 0;
+		z-index: 1;
+
+		.firstletter {
+			font-family: $ModernNAP-Display;
+			font-size: 290%; 
+			margin: 8px 0 -5px 0;
+			padding: 0 0.1em 0 0; 
+			height: 0.8em; 
+			line-height: 0.65em; 
+			float: left;  
+			*line-height: 0.88em; /* IE7 Only */
+		}	
+        
+        em {
+            font-family: "GillSans", Arial, sans serif;
+            font-size: 13px;
+            line-height: 17px;
+            z-index: 1;
+            margin-bottom: 0;
+        }
+
+		strong {
+			font-family: $bodyCopyBold;
+		}	
+
+		}
+
+	// p after p tag for indent
+	p + p {
+		margin-top: 0;
+		z-index: 1;
+		text-indent: 10px;
+		}
+	
+	area {
+		outline:none;
+	}
+
+	li 	{
+	font-size: 14px;
+	line-height:16px;
+	}
+	.aboveImageText{
+	z-index:10;
+	}
+	
+	.magazineContentNap p {
+		font-family: $ModernNAP-Display;
+    	font-size: 14px;
+    	line-height: 16px;
+	}
+	
+	.alignLeft{
+		float: left;
+	}
+	
+	img.alignLeft {
+		display: inline;
+    	margin: 0 7px 5px 0;
+    	
+    	padding: 2px 2px 0 0;
+	}
+	
+	//question style in cover story
+	
+	.coverQuestion {
+	
+		h3 {
+			font-family: $ModernNAP-TextItalic; 
+			font-size: 13px;
+			line-height: 17px;
+			font-style: normal;
+			letter-spacing:0px;
+			text-transform:none;
+			}
+		
+	}
+	
+	
+
+
+	// content
+	.contentsPageHolder {
+
+		// h tag style applied to all h's inside styleTip box
+		@for $i from 2 through 5 {
+			h#{$i} {
+				font-family: $bodyCopy;
+				font-size: 15px;
+				letter-spacing: -1px;
+				line-height: 13px;
+				text-transform: uppercase;
+			}
+		}
+	
+		p {
+			font-size: 10px;
+			line-height:12px;
+		}
+	}
+
+
+
+
+	// question block
+	.questionBlock {
+		// put questions in strong change style
+		z-index: 1;
+
+		strong {
+			font-family: $bodyCopyBold;
+			font-weight: normal; 
+			font-size: 13px; 
+			line-height:16px;
+		}
+		
+		// how to treat answers
+		p {
+			margin-bottom: 0px !important
+		}
+
+		p + p {
+			 text-indent: 0em;
+			 margin-bottom: 0px !important
+		}
+	}
+	
+	// Standard article text 
+	// Includes first paragraph drop cap
+	.article {  
+		
+		p {
+			margin-bottom: 0px !important;
+			font-family: $ModernNAP-Text; 
+			font-size: 12px;
+			line-height:17px;
+			letter-spacing: 0;
+            
+            &.quote {
+                em, span {
+                    font-family: "ModernNAP-DisplayItalic", Georgia, "Times New Roman", serif;
+                    font-size: 20px;
+                    font-style: normal;
+                    line-height: 23px;
+                }
+            }
+            
+            em, span, a {
+                font-family: "ModernNAP-Text", Georgia, "Times New Roman", serif;
+                font-size: 12px;
+                letter-spacing: 0;
+                line-height: 17px;
+            }
+		}
+		
+		.dropcap2:first-letter { 
+			font-family: $ModernNAP-Display;
+			font-size: 290%; 
+			margin: 8px 0 -5px 0;
+			padding: 0 0.1em 0 0; 
+			height: 0.8em; 
+			line-height: 0.65em; 
+			float: left;  
+			*line-height: 0.88em; /* IE7 Only */ 
+		}
+		
+		.dropcap3:first-letter { 
+			font-family: $ModernNAP-Display;
+			font-size:480%; 
+			margin:8px 0 -5px 0; 
+			padding:0 0.1em 0 0; 
+			height: 0.84em; 
+			line-height:0.72em; 
+			float:left;  
+			*line-height:0.85em; /* IE7 Only */ 
+		}
+		
+		p + p {
+			 text-indent: 10px;
+			 margin-bottom: 0px !important;
+			 font-family: $ModernNAP-Text;
+			 font-size: 12px;
+			 line-height: 17px;
+			 letter-spacing: 0;
+		}
+	}
+	
+	
+	.rightText{
+	text-align: right; 
+		h4{
+		 font-size:14px;
+		 line-height:14px;
+		 text-transform: uppercase;
+		 font-weight: normal;
+		 text-decoration: none;
+		}
+	}
+	.leftText{
+	text-align: left;
+	font-size:12px;
+	line-height: 14px;
+		h4{
+		 font-size:14px;
+		 line-height:14px;
+		 text-transform: uppercase;
+		 font-weight: normal;
+		 text-decoration: none;
+		}
+	}
+
+
+.theCredits{
+background:#ffffff;
+}
+	
+	// sell Headline style
+	.sellHeadline {
+		font-size: 18px;
+		letter-spacing: -1px;
+		line-height: 13px;
+		text-transform:uppercase;
+		z-index: 1;
+	}
+	
+	// sell style
+	.sellCopy {
+		font-family: $ModernNAP-SubheadItalic; 
+		font-size: 16px;
+		letter-spacing: 0;
+		word-spacing: 0;
+		line-height: 18px;
+		z-index: 1;
+	}
+
+	// sell style
+	.sellCopyFonts {
+		font-family: $ModernNAP-SubheadItalic; 
+		font-size: 16px;
+		letter-spacing: 0;
+		word-spacing: -0.05em;
+		line-height: 18px;
+		z-index: 1;
+	}
+	
+	// sell style small
+	.questionHeaderText{
+		font-family: $ModernNAP-TextItalic; 
+		font-size: 17px;
+		line-height: 19px;
+		z-index: 1;
+		padding-top: 2px;
+	}
+	.sellCopySmall{
+		font-family: $ModernNAP-TextItalic; 
+		font-size: 15px;
+		line-height: 16px;
+		z-index: 1;
+		padding-top: 2px;
+	}
+	// sell style small
+	.sellCopySmallDisplay{
+		font-family: $ModernNAP-Display; 
+		font-size: 17px;
+		line-height: 19px;
+		z-index: 1;
+		padding-top: 2px;
+	}	
+	
+	// photography credit style
+	.photographyCredits {
+
+		p {
+		font-family: $ModernNAP-SubheadItalic;
+		font-size: 12px;
+		letter-spacing: 0;
+		z-index: 1;
+		line-height:15px;
+		font-style: italics;
+		
+		span {
+            font-family: "ModernNAP-SubheadItalic", Georgia, "Times New Roman", serif;
+            font-size: 12px;
+            letter-spacing: 0;
+            line-height: 15px;
+            z-index: 1;
+			text-transform: uppercase;
+			}
+
+		// clear p stylings
+		p + p {
+			text-indent: 0em;
+			}
+		}
+	}
+	
+	
+	
+	// designer credit style
+	.designerCredit {
+		background-color: #000000;
+		color: #fff;
+		font-family: $bodyCopy;
+		font-size: 10px;
+		line-height: 10px;
+		padding: 4px 5px 4px 5px;
+		text-transform: uppercase;
+		z-index: 1;
+	}
+	
+	// designer credit style
+	.designerCreditLowercase {
+		background-color: #000000;
+		color: #fff;
+		font-family: $bodyCopy;
+		font-size: 10px;
+		line-height: 10px;
+		padding: 4px 5px 4px 5px;
+		z-index: 1;
+	}
+
+	
+	// button classes for small button icons
+	.btnInformation {
+		// class goes in div, click inside to an a tag
+		z-index: 1;
+
+		a {
+			@extend .span-1 !optional;
+			background: url($framework-image-path + 'styleGuide/btnInformation.png') no-repeat;
+			text-indent:-9999px;
+		}
+	}
+
+	.btnPlus {
+		// class goes in div, click inside to an a tag
+		z-index: 1;
+	
+		a {
+			@extend .span-1 !optional;
+			background: url($framework-image-path + 'styleGuide/btnPlus.png') no-repeat;
+			text-indent:-9999px;
+		}
+	}
+
+	.btnMinus {
+		// class goes in div, click inside to an a tag
+		z-index: 1;
+		a {
+			@extend .span-1 !optional;
+			background: url($framework-image-path + 'styleGuide/btnMinus.png') no-repeat;
+			text-indent:-9999px;
+		}
+	}
+	 
+	// quote block credit style
+	.quoteBlock, .quote, .quoteBlack, .quoteWhite {
+		 // quote must go in em tags
+
+		 z-index: 1;
+		 text-align: center;
+
+		 h5 {
+		 	font-family: $ModernNAP-Display;
+		 	font-size: 16px;
+		 	line-height: 23px;
+		 	text-transform: uppercase;
+		 }
+
+		 p em, em {
+			font-family: $ModernNAP-DisplayItalic; 
+			font-size: 20px;
+			/* letter-spacing: -1px; */ 
+			line-height: 23px;
+			font-style: normal;
+             
+		 }
+
+		 // the quoted in a follow up p tag
+		 p + p {
+			font-family: $bodyCopy; 
+			font-size: 10px;
+			letter-spacing: 0px;
+			margin-bottom: 0px !important; 
+			text-indent: 0em;
+			text-transform: uppercase;
+		}
+	}
+
+	// new quote block now includes borders
+	.quote {
+		border-bottom: 1px solid #999999;
+    	border-top: 1px solid #999999;
+    	padding: 10px 0;
+	}
+
+	.quoteBlack {
+		border-bottom: 1px solid #000;
+    	border-top: 1px solid #000;
+    	padding: 10px 0;
+	}
+	
+	.quoteWhite {
+		border-bottom: 1px solid #fff;
+    	border-top: 1px solid #fff;
+    	padding: 10px 0;
+	}
+
+	 // Fashion credit
+	 .fashionCredit {
+		line-height:12px;
+		z-index: 1;
+				
+			p{
+				font-size:10px;
+				line-height:12px;
+                
+                em, a, span {
+                    font-size: 10px;
+                    line-height: 12px;
+                }
+			}
+
+			h3 {
+				font-family: $ModernNAP-Subhead; 
+			    font-size: 14px;
+			    line-height: 14px;
+			}
+		}
+
+	// Picture credit
+	 .pictureCredit {
+		line-height:12px;
+		z-index: 1;
+		padding: 5px;
+				
+			p{
+				font-size:10px;
+				line-height:12px;
+			}
+
+			h3 {
+				font-family: $ModernNAP-Subhead; 
+			    font-size: 14px;
+			    line-height: 14px;
+			}
+		}
+		
+		
+	// kicker boxout white opacity style
+	.kickerBlockWhite, .kickerBlockWhiteSolid {
+		line-height:12px;
+		z-index: 1;
+		padding:8px;
+				
+				
+		// h tag style applied to all h's inside kicker box, so any available to web production
+		@for $i from 2 through 5 {
+			h#{$i} {
+				font-family: $bodyCopy !important;
+				text-transform: uppercase !important;
+				font-size: 12px;
+				line-height: 12px;
+				letter-spacing: 0px;
+				padding:0;
+			}
+		}
+        
+        p{
+            font-size:10px;
+            line-height:12px;
+            
+            em {
+                font-size: 10px;
+                line-height: 12px;
+            }
+        }
+	
+	}
+
+	.kickerBlockWhite {
+		background: url($framework-image-path + 'styleGuide/whiteBG.png') repeat scroll 0 0 transparent;
+	}
+
+	.kickerBlockWhiteSolid {
+		background-color: #FFF;
+	}
+
+
+	.kickerBlockWhite {
+		background: url($framework-image-path + 'styleGuide/whiteBG.png') repeat scroll 0 0 transparent;
+	}
+
+	.kickerBlockWhiteSolid {
+		background-color: #FFF;
+	}
+
+
+	// kicker boxout style
+	.kickerBlock {
+		background-color: #000000;
+		color: #fff;
+		z-index: 1;
+		padding:8px;
+
+		// h tag style applied to all h's inside kicker box, so any available to web production
+		@for $i from 2 through 5 {
+			h#{$i} {
+				font-family: $bodyCopy !important;
+				text-transform: uppercase !important;
+				font-size: 12px;
+				line-height: 12px;
+				letter-spacing: 0px;
+				padding:0;
+			}
+		}
+
+		strong {
+			text-transform: uppercase;
+			font-weight: normal; 
+		}
+
+		p {
+			font-size: 10px;
+			line-height:12px;
+			margin: 0;
+			padding: 0;
+            
+            em {
+                font-size: inherit;
+                line-height: inherit;
+            }
+		}
+
+		p + p {
+			text-indent: 0em;
+		}		
+	}
+
+	.noBG {
+		background: transparent!important;
+	}
+
+	.greyBG {
+		background-color: #EEF1F0;
+	}
+
+	.noPadding {
+		background-color: transparent!important;
+		padding: 0!important; 
+	}
+	 
+	// styleTip boxout style
+	.styleTip {
+		text-align: center;
+		padding: 8px;
+		z-index: 1;
+		background: url($framework-image-path + 'styleGuide/whiteBG.png') repeat scroll 0 0 transparent;
+
+		// h tag style applied to all h's inside styleTip box
+		@for $i from 2 through 5 {
+			h#{$i} {
+				font-family: $bodyCopy;
+				font-size: 15px;
+				letter-spacing: 0;
+				line-height: 13px;
+				text-transform: uppercase;
+			}
+		}
+	
+		p {
+			font-size: 10px;
+			line-height: 12px;
+			letter-spacing: 0px;
+		}
+	}
+
+	.styleTipWhiteLeft {
+	    padding: 5px 0;
+	    text-align: left;
+	    z-index: 1;
+	    h3 {
+	    	font-family: "ModernNAP-Display";
+    		font-size: 18px;
+    		letter-spacing: -1px;
+    		line-height: 16px;
+    		text-transform: uppercase;
+	    }
+	}
+
+	.styleTipWhiteSmall p {
+	    font-size: 12px;
+		line-height: 14px;
+	    letter-spacing: 0;
+	}
+	
+	
+	.subHead {
+		
+		h3{
+			font-family:$ModernNAP-Display;
+			font-size: 18px;
+			letter-spacing: 0px;
+			line-height: 16px;
+			*line-height: 19px; 
+ 			text-transform: uppercase;
+		}
+		
+		h4{
+			font-family:$ModernNAP-Display;
+			font-size: 13px;
+			letter-spacing: 0px;
+			line-height: 15px;
+			text-transform: uppercase;
+		}
+		
+	}
+	
+	// background image
+	.backgroundImage {
+		height: $magazine-container-height;
+		width: $magazine-container-width;
+		z-index: 0;
+	}
+	
+	.clearBackground{
+	background-color:transparent!important;
+	} 
+	 
+	 
+
+
+	// Travel Style Feature - question in Gill and answers Modern Nap
+	
+	.travelStyle {
+		h2 {
+				font-family: $ModernNAP-Display;
+				font-size: 20px;
+				line-height: 17px;
+				padding-bottom: 2px;
+				text-transform: uppercase;
+				/* letter-spacing: 1px; */
+
+				em {
+					font-family: $ModernNAP-SubheadItalic;
+					font-style: normal;
+					text-transform: none;
+					}
+			}
+			
+			h3 {
+				font-family: $ModernNAP-SubheadItalic;
+				font-size: 16px;
+				line-height: 17px;
+				padding-bottom: 2px;
+				letter-spacing: -1px;
+				text-transform: none; 
+			}
+		
+			p, strong {
+				font-size: 12px;
+				line-height: 17px;
+				letter-spacing: 0;
+				text-indent: 0!important;
+			}
+			
+			p { font-family: $ModernNAP-Text;
+        
+                em, span, a {
+                    font-family: "ModernNAP-Text", Georgia, "Times New Roman", serif; font-size: 12px; letter-spacing: 0; line-height: 17px; text-indent: 0 !important;
+                }
+        }
+			strong { font-family: $bodyCopy; }
+			p.question { text-transform:uppercase; font-family: "GillSans"; letter-spacing:0;}
+        
+        .travelhead { font-family: "ModernNAP-Display", Georgia, "Times New Roman", serif; font-size: 35px; line-height: 43px; }
+			
+	}
+	
+	// The List feature with header and subhead underlined
+	
+	.theListUnderline {
+		h2 {
+				font-family: $bodyCopyBold;
+				font-size: 18px;
+				line-height: 17px;
+				*line-height: 19px;
+				text-transform: uppercase;
+				letter-spacing: 0px;
+			}
+			
+			h3 {
+				font-family: $bodyCopy;
+				font-size: 18px;
+				line-height: 17px;
+				text-transform: uppercase;
+				letter-spacing: 0px;
+				padding-bottom: 25px;
+			}
+
+			p.sections {
+				padding-bottom: 10px;
+			}
+	}
+
+
+	// The List feature without header and subhead underlined
+	
+	.theList {
+		h2 {
+				font-family: $bodyCopyBold;
+				font-size: 18px;
+				line-height: 17px;
+				text-transform: uppercase;
+				letter-spacing: 0px;
+			}
+			
+			h3 {
+				font-family: $bodyCopy;
+				font-size: 18px;
+				line-height: 17px;
+				text-transform: uppercase;
+				letter-spacing: 0px;
+			}
+		
+			p  {
+				font-family: $ModernNAP-Text;
+				font-size: 12px;
+				line-height: 17px;
+			}
+	}
+	
+	// The List Feature - Headers in Nap Modern Display
+	
+	.theListDisplay {
+		h2 {
+				font-family: $ModernNAP-Display;
+				font-size: 20px;
+				line-height: 19px;
+				*line-height: 23px;
+				text-transform: uppercase;
+				letter-spacing: 0px;
+			}
+			
+			h3 {
+				font-family: $ModernNAP-DisplayItalic;
+				font-size: 20px;
+				line-height: 19px;
+				letter-spacing: 0px;
+				padding-bottom: 2px;
+				text-transform: none;
+			}
+		
+			p  {
+				font-family: $ModernNAP-Text;
+				font-size: 12px;
+				line-height: 17px;
+				letter-spacing: 0;
+                
+                em, span {
+				    font-family: $ModernNAP-Text;
+                    font-size: 12px;
+                    letter-spacing: 0;
+                    line-height: 17px;
+                }
+			}
+
+			strong {
+				font-family: $bodyCopyBold;
+				font-size: 13px;
+				line-height: 17px;
+			}
+	}
+
+
+	// Specific block only used in Beauty Features
+
+	.beautyModern {
+		h2 {
+			font-family: $ModernNAP-Display;
+			font-size: 24px;
+			line-height: 21px;
+			text-transform: uppercase;
+			letter-spacing: 0px;
+			
+			em {
+				text-transform: none;
+			}
+			
+			span {
+				text-transform: none;
+			}
+		}
+
+		h3 {
+			font-family: $bodyCopyBold;
+			font-size: 13px;
+			line-height: 17px;
+			letter-spacing: 0px;
+			text-transform: none;
+		}
+
+	}
+
+
+	// Numbers only ever used in Beauty Features
+
+	.beautyNumbers {
+		h2 {
+			padding: 0 0 5px 0;
+			font-family: $ModernNAP-Text;
+			font-size: 24px;
+			line-height: 21px;
+			letter-spacing: 0;
+			text-transform: uppercase;
+		}
+	}
+
+
+	.beautyNapTxt {
+	
+		h3 {
+		font-family: $ModernNAP-Subhead;
+		font-size: 16px;
+		line-height: 14px;
+		text-transform: uppercase;	
+
+			em {
+			font-family: $ModernNAP-SubheadItalic;	
+			text-transform: none;	
+			font-style: normal;
+			}	
+		}
+
+			p {
+				font-family: $ModernNAP-Text;
+				font-size: 12px;
+				line-height: 17px;
+			}
+	}
+
+
+	// Block only used in The List Styles section
+
+	.theListStyles {
+		h4 {
+		  	font-family: $ModernNAP-Subhead;
+			font-size: 12px;
+			line-height: 14px;
+			text-transform: uppercase;	
+
+				em {
+				font-family: $ModernNAP-SubheadItalic;
+				font-style: normal;
+				}
+		}
+	}
+
+		.theListLook {
+		h4 {
+		  	font-family: $ModernNAP-Subhead;
+			font-size: 14px;
+			line-height: 14px;
+			*line-height:16px; /* IE7 Only */ 
+			text-transform: uppercase;	
+
+				em {
+				font-family: $ModernNAP-SubheadItalic;
+				font-style: normal;
+				}
+		}
+	}
+
+	// styles specific to Rethink and Runway to Real Life feautures
+
+	.rethinkSideBar, .runwayToRealLife {
+	
+		h3 {
+		font-family: $ModernNAP-Subhead;
+		font-size: 16px;
+		line-height: 14px;
+		text-transform: uppercase;	
+
+			em {
+			font-family: $ModernNAP-SubheadItalic;	
+			text-transform: none;	
+			font-style: normal;
+		font-size: 16px;
+		line-height: 14px;
+			}	
+		}
+
+			p {
+				font-family: $bodyCopy;
+				font-size: 10px;
+				text-transform: uppercase;
+				line-height: 11px;
+                
+                em, a {
+                    font-family: $bodyCopy;
+                    font-size: 10px;
+                    text-transform: uppercase;
+                    line-height: 11px;
+                }
+			}
+	}
+
+	// Box Out style for transparent boxes with padding
+
+	.boxOut {
+		padding: 8px;
+		margin: 0;
+		background: url($framework-image-path + 'styleGuide/whiteBG.png') repeat scroll 0 0 transparent;
+	}
+
+	// Styles specific to interviews
+
+	.interviewBox {
+
+			h2 {
+			font-family: $ModernNAP-Text;
+			font-size: 16px;
+			line-height: 14px;
+			text-transform: uppercase; 
+			letter-spacing: 0;
+		}
+
+		p {
+			font-family: $bodyCopy;
+			font-size: 14px;
+			line-height: 17px;
+		}
+	}
+
+	// 24/7 Feature specific styles
+
+	.twenty47Box {
+
+		h2 {
+			font-family: $bodyCopyBold;
+			font-size: 14px;
+			line-height: 13px;
+			text-transform: uppercase; 
+			letter-spacing: 0;
+		}
+
+		h3 {
+			font-family: $bodyCopy;
+			font-size: 12px;
+			line-height: 13px;
+			text-transform: uppercase; 
+			letter-spacing: 0;
+		}
+
+		h4 {
+			font-family: $bodyCopy;
+    		font-size: 15px;
+    		line-height: 13px;
+    		text-transform: uppercase;
+    		letter-spacing: 0;
+		}
+
+		p {
+			font-family: $bodyCopy;
+			font-size: 10px;
+			line-height: 13px;
+		}
+	}
+
+	.mastHeadHeader, .mastHeadSubHeader {
+
+		h2 {
+			font-family: $ModernNAP-Text;
+			font-size: 14px;
+			line-height: 16px;
+			text-transform: uppercase; 
+			letter-spacing: 0;
+			padding-top: 0!important;
+		}	
+
+		h3 {
+			font-family: $ModernNAP-TextItalic;
+			font-size: 12px;
+			line-height: 14px;
+			text-transform: none; 
+			letter-spacing: 0;
+			padding-bottom: 10px;
+			padding-top: 0!important;
+		}
+
+		h4 {
+			font-family: $ModernNAP-SubheadItalic;
+			font-size: 12px;
+			line-height: 14px;
+			text-transform: uppercase; 
+			letter-spacing: 0;
+		}
+
+		p {
+			font-family: $ModernNAP-Text;
+			font-size: 10px;
+			line-height: 14px;
+            
+            span, strong {
+                font-family: $ModernNAP-Text;
+                font-size: 10px;
+                line-height: 14px;
+            }
+
+				strong {
+					text-transform: uppercase; 
+					font-weight: normal;
+				}
+		}
+		p + p {
+			text-indent:0;
+		}
+		
+	}
+
+	.mastHeadFooter {
+
+		p {
+			font-family: $ModernNAP-Text;
+			font-size: 10px;
+			line-height: 12px;
+
+				strong {
+					font-family: $ModernNAP-Text;
+					text-transform: uppercase; 
+					font-weight: normal;
+				}
+				
+		}
+
+	}
+
+	// Contents Page
+
+	//  old style pre template
+
+	.editorSignature {
+
+		padding-left: 10px;
+
+		p {
+			font-family: $bodyCopyBold!important;
+			font-size: 10px!important;
+			line-height: 10px!important;
+			text-transform: uppercase!important;
+		}
+	}
+
+	// New style included in template
+
+	.editorSig {
+
+		padding: 0px;
+
+		p {
+			font-family: $bodyCopyBold!important;
+			font-size: 10px!important;
+			line-height: 10px!important;
+			text-transform: uppercase!important;
+		}
+	}
+
+	.contentsList {
+
+		ul {
+			li {
+				display: block;
+				float: left;
+				clear: right;
+				*clear: both; /* IE7 Only */ 
+				*width: 220px; /* IE7 Only */
+
+				span {
+					padding: 1px 0 0 0;
+					margin: 0;
+					position: absolute;
+					left: 0;
+					font-family: $ModernNAP-Display;
+					font-size: 15px;
+					line-height: 17px;
+					text-align: right;
+    				width: 14px;
+			}
+
+			p {
+				font-family: "GillSans";
+    			font-size: 13px;
+    			left: 20px;
+    			line-height: 17px;
+    			padding-bottom: 5px;
+    			position: relative;
+    			text-transform: none;
+
+					strong {
+						font-family: $bodyCopyBold;
+						font-size: 12px;
+						line-height: 17px;
+						text-transform: uppercase;
+					}
+				}
+			}
+		}
+
+	}
+
+	.altCaption {
+		padding:5px;
+
+		h5 {
+			font-family: $bodyCopy;
+			font-size: 12px;
+			line-height: 13px;
+			text-transform: uppercase;
+		}
+
+		p {
+			font-family: $bodyCopy;
+			font-size: 10px;
+			line-height: 13px;
+		}
+	}
+
+	.contentsHeader {
+
+		h2 {
+			font-family: $ModernNAP-SuperDisplay;
+			font-size: 42px;
+			line-height: 30px;
+			text-transform: none;
+			letter-spacing: -2px;
+		}
+	}
+
+	.edLetter {	
+		padding: 0 0 0 10px;
+
+	}
+
+	.contentsBorder {
+		 border-left: 1px solid #999;
+    	 height: 450px;
+    	 left: 690px;
+    	 position: absolute;
+    	 top: 110px;
+    	 width: 1px;
+	}
+
+	.edsPicksBorder {
+		 border-top: 1px solid #999;
+		 border-bottom: 1px solid #999;
+    	 height: 175px;
+    	 left: 100px;
+    	 position: absolute;
+    	 top: 410px;
+    	 width: 183px;
+	}
+	
+	//override old editor letter content list style
+	.edLetterList{
+	border-left: 1px solid #999999;
+    padding-left: 10px;
+    
+		.contentsHeader{
+			margin-bottom:10px;
+			padding-left:2px;
+		}
+		
+		.contentsList ul li{
+			margin-bottom:5px;
+			position:relative;
+		}
+		
+		.contentsList ul li.last{
+			margin-bottom:0;
+		}
+		
+		.contentsList ul li p{
+			padding-bottom:0;
+		}
+	}
+
+
+	.interviewStyles {
+		h3 {
+			font-family: $ModernNAP-Subhead;
+			font-size: 16px;
+			line-height: 14px;
+
+			em {
+				font-family: $ModernNAP-SubheadItalic;
+				font-style: normal;
+				text-transform: none;
+			}
+		}
+	}
+
+.trendReport {
+	h2 {
+		font-family: $ModernNAP-Display;
+		font-size: 36px;
+		line-height: 28px;
+	}
+
+	h4 {
+		  	font-family: $ModernNAP-Subhead;
+			font-size: 14px;
+			line-height: 14px;
+			text-transform: uppercase;	
+			padding: 0px!important;
+
+				em {
+				font-family: $ModernNAP-SubheadItalic;
+				font-style: normal;
+				}
+		}
+}
+
+.trendSideBar {
+		h4 {
+		  	font-family: $ModernNAP-Subhead;
+			font-size: 14px;
+			line-height: 14px;
+			text-transform: uppercase;	
+			padding:5px 0 0 0;
+
+				em {
+				font-family: $ModernNAP-SubheadItalic;
+				font-style: normal;
+				}
+		}
+
+		p {
+			font-family: $bodyCopy;
+			font-size: 10px;
+			line-height: 12px;
+			padding: 5px;
+		}
+}
+
+// Beauty Drop Cap
+
+.powerList {
+		
+		h2.dropcapNumber { 
+			font-family: $ModernNAP-DisplayItalic;
+			font-size: 480%; 
+			margin: 0 0 -5px 0;
+			padding: 0 0.1em 0 0; 
+			height: 0.6em; 
+			line-height: 0.8em;
+			float: left;
+			*line-height: 0.7em; /* IE7 Only */ 
+		}
+
+		h3 {
+			font-family: $ModernNAP-Display; 
+			font-size: 20px;
+			line-height: 17px;
+			letter-spacing: 0;
+			margin-bottom: 0px !important;
+			text-transform: none;
+
+				em {
+					font-family: $ModernNAP-SubheadItalic; 
+					font-size: 16px;
+					line-height: 17px;
+					font-style: normal;
+					letter-spacing: 0;
+					text-transform: none;
+				}
+		}
+}
+
+
+// shoot Style V2 march
+
+.shootNew {
+	
+		h4{
+			font-family: $ModernNAP-Display;
+			font-size: 21px;
+			line-height: 16px;
+			text-transform: none;
+			letter-spacing: 0px;
+		}
+
+		p{
+		font-size:10px;
+		line-height:12px;
+		}
+
+
+}
+
+
+// legacy style
+
+.coverStoryInterview {
+	
+	h4 {
+			font-family: $bodyCopy;
+			font-size: 12px;
+			line-height:17px;
+		}
+
+		p {
+			font-family: $ModernNAP-Text;
+			font-size: 12px;
+			line-height:17px;
+			text-indent: 0px!important;
+		}		
+} 
+
+// cleaner style version
+
+.interview {
+	
+	h4 {
+			font-family: $bodyCopy;
+			font-size: 12px;
+			line-height:17px;
+
+				em {
+					font-family: $ModernNAP-TextItalic;
+					font-size: 12px;
+					line-height:17px;
+					text-indent: 0px!important;
+					font-style: normal;
+					text-transform: none;
+				}
+		}
+
+		p {
+			font-family: $ModernNAP-Text;
+			font-size: 12px;
+			line-height:17px;
+			text-indent: 0px!important;
+			padding-bottom: 15px;
+
+				em {
+					font-family: $ModernNAP-TextItalic;
+					font-size: 12px;
+					line-height:17px;
+					text-indent: 0px!important;
+					font-style: normal;
+					text-transform: none;
+				}
+		}		
+} 
+
+// borders on pages
+
+.borderTop {
+	width: 210px;
+	border-top: solid 1px #999;
+	padding-top: 5px;
+}
+
+.styleRethinkBorders {
+	border-top: 1px solid #999999;
+	border-bottom: solid 1px #999;
+    left: 740px;
+    padding: 4px 0 540px 0;
+    position: absolute;
+    top: 41px;
+}
+
+.mastheadBorder {
+		border-bottom: 1px solid #999;
+		padding-bottom: 40px;
+		width: 268px;
+}
+
+//hack to remove animation images border for IE
+.contentRotator li img {
+    background: transparent;
+    border-style:none;
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#00FFFFFF,endColorstr=#00FFFFFF)"; /* IE8 */   
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#00FFFFFF,endColorstr=#00FFFFFF);   /* IE6 & 7 */ 
+}
+
+//list new style
+.greyBox {
+	margin-left:13px;
+	background: none repeat scroll 0% 0% #eef1f0;
+	padding: 0 8px 8px 6px;
+}
+
+.greyBoxRight {
+	margin-right:13px;
+	background: none repeat scroll 0% 0% #eef1f0;
+	padding: 0 8px 8px 6px;
+}
+	
+.theListGreyBox {
+	
+	.blackLine{
+		padding:6px 38px;
+		
+		span {
+			background-color: black;
+			display:block;
+			height:12px
+		}
+	}
+	
+	h2 {
+		    font-family: $bodyCopyBold;
+    		font-size: 18px;
+    		letter-spacing: 0;
+    		line-height: 17px;
+    		text-transform: uppercase;
+	}
+	
+	h3 {
+		    font-family: $bodyCopy;
+    font-size: 18px;
+    letter-spacing: 0;
+    line-height: 17px;
+    text-transform: uppercase;
+        
+        em {
+            font-family: "GillSans", Arial, sans serif;
+            font-size: 18px;
+            letter-spacing: 0;
+            line-height: 17px;
+            text-transform: uppercase;
+        }
+	}
+}
+
+//new boost style
+
+	.theBoost{
+	
+		.btnShopThe{
+			padding-top: 15px;
+		}
+		
+		.btnShopTheTwoLine{
+			padding-top: 15px;
+			float:none;
+		}
+		
+		.btnShopTheTwoLineWhite{
+			padding-top: 15px;
+			float:none;
+		}
+		
+		.blackLine{
+			padding:6px 38px 0;
+			margin:6px auto 0; 
+			display: block;
+    		float: none;
+			
+			span{
+				background-color: #000000; 
+				display:block; 
+				height:12px;
+			}
+		}
+		
+		.blackLineWhite{
+			padding:6px 38px 0;
+			margin:6px auto 0; 
+			display: block;
+    		float: none;
+			
+			span{
+				background-color: #ffffff; 
+				display:block; 
+				height:12px;
+			}
+		}
+
+		.quoteBlock {
+    		display: block;
+    		float: none;
+    		margin: 0 auto;
+    		padding-top: 8px;
+    	}
+	}
+	
+	.thinLine{
+		padding:10px 0;
+		display: block;
+    	float: none;
+    	margin: 0 auto;
+    	
+    	span{
+    		border-bottom: 1px solid #000000;
+    		display: block;
+    		margin: 0 5px;
+		}
+	}
+	
+	.thinLineWhite{
+		padding:10px 0;
+		display: block;
+    	float: none;
+    	margin: 0 auto;
+    	
+    	
+    	span{
+    		border-bottom: 1px solid #ffffff;
+    		display: block;
+    		margin: 0 5px;
+		}
+	}
+
+	
+	//new shoot style
+	.shoot {
+		h3{ 
+			font-size:18px;
+			line-height:17px;
+			font-family:$ModernNAP-SubheadItalic;
+			text-transform: none;
+		}
+	}
+	
+	.noIndent{
+		p {
+			text-indent:0 !important
+		}
+	}
+
+	.portfolioHeading{
+		font-size: 26px !important;
+    	line-height: 23px !important;
+	}
+
+	.centerBlock {
+		display:block;
+		float:none;
+		margin:0 auto;
+	}
+	.msPorter{
+
+		h2{
+			font-family:$MsPorter;
+			font-size:65px;
+			letter-spacing:0;
+			text-transform:none;
+			line-height:65px;
+			font-weight:normal;
+			z-index:1;
+		}
+	}
+}

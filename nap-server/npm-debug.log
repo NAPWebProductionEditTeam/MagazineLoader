@@ -1,0 +1,59 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node', '/usr/local/bin/npm', 'install', 'hogan-express' ]
+2 info using npm@1.1.59
+3 info using node@v0.8.8
+4 verbose read json /Users/k.thomas/Projects/nap-frontend/package.json
+5 warn package.json test-server@0.0.1 No README.md file found!
+6 verbose read json /Users/k.thomas/Projects/nap-frontend/node_modules/consolidate/package.json
+7 verbose read json /Users/k.thomas/Projects/nap-frontend/node_modules/express/package.json
+8 verbose read json /Users/k.thomas/Projects/nap-frontend/node_modules/mustache/package.json
+9 verbose read json /Users/k.thomas/Projects/nap-frontend/node_modules/request/package.json
+10 verbose read json /Users/k.thomas/Projects/nap-frontend/node_modules/underscore/package.json
+11 verbose from cache /Users/k.thomas/Projects/nap-frontend/package.json
+12 verbose readDependencies using package.json deps
+13 verbose cache add [ 'hogan-express', null ]
+14 silly cache add name=undefined spec="hogan-express" args=["hogan-express",null]
+15 verbose parsed url { pathname: 'hogan-express',
+15 verbose parsed url   path: 'hogan-express',
+15 verbose parsed url   href: 'hogan-express' }
+16 silly lockFile 75854c55-hogan-express hogan-express
+17 verbose lock hogan-express /Users/k.thomas/.npm/75854c55-hogan-express.lock
+18 silly lockFile 75854c55-hogan-express hogan-express
+19 verbose addNamed [ 'hogan-express', '' ]
+20 verbose addNamed [ null, '' ]
+21 silly lockFile e6c9508f-hogan-express hogan-express@
+22 verbose lock hogan-express@ /Users/k.thomas/.npm/e6c9508f-hogan-express.lock
+23 silly addNameRange { name: 'hogan-express', range: '', hasData: false }
+24 verbose url raw hogan-express
+25 verbose url resolving [ 'https://registry.npmjs.org/', './hogan-express' ]
+26 verbose url resolved https://registry.npmjs.org/hogan-express
+27 info retry registry request attempt 1 at 09:49:55
+28 http GET https://registry.npmjs.org/hogan-express
+29 info retry will retry, error on last attempt: Error: connect ECONNREFUSED
+30 info retry registry request attempt 2 at 09:50:05
+31 http GET https://registry.npmjs.org/hogan-express
+32 info retry will retry, error on last attempt: Error: connect ECONNREFUSED
+33 info retry registry request attempt 3 at 09:51:05
+34 http GET https://registry.npmjs.org/hogan-express
+35 silly lockFile e6c9508f-hogan-express hogan-express@
+36 error Error: connect ECONNREFUSED
+36 error     at errnoException (net.js:768:11)
+36 error     at Object.afterConnect [as oncomplete] (net.js:759:19)
+36 error  { [Error: connect ECONNREFUSED]
+36 error   code: 'ECONNREFUSED',
+36 error   errno: 'ECONNREFUSED',
+36 error   syscall: 'connect' }
+37 error If you are behind a proxy, please make sure that the
+37 error 'proxy' config is set properly.  See: 'npm help config'
+38 error System Darwin 10.8.0
+39 error command "node" "/usr/local/bin/npm" "install" "hogan-express"
+40 error cwd /Users/k.thomas/Projects/nap-frontend
+41 error node -v v0.8.8
+42 error npm -v 1.1.59
+43 error syscall connect
+44 error code ECONNREFUSED
+45 error errno ECONNREFUSED
+46 error stack Error: connect ECONNREFUSED
+46 error stack     at errnoException (net.js:768:11)
+46 error stack     at Object.afterConnect [as oncomplete] (net.js:759:19)
+47 verbose exit [ 1, true ]

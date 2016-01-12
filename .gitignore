@@ -1,0 +1,37 @@
+# OS X
+Icon
+Thumbs.db
+.DS_Store
+
+# SASS
+*.sass-cache
+
+#ignore sass compiled files
+magazine-frontend/_framework/css
+
+#ignore node modules
+node_modules
+
+#ignore symlinks
+nap-server/public
+
+#utility logs
+build-utilities/log.txt
+
+# JS Minified
+magazine-frontend/_framework/js/animationLibraries/CSS3-Engine.min.js
+magazine-frontend/_framework/js/animationLibraries/jQueryRender.min.js
+magazine-frontend/_framework/js/brightcovePlayer/APIModules_all.min.js
+magazine-frontend/_framework/js/brightcovePlayer/BrightcoveExperiences.min.js
+magazine-frontend/_framework/js/hammer/hammer.min.js
+magazine-frontend/_framework/js/imageSourceReplace/imageSourceReplace.min.js
+magazine-frontend/_framework/js/browserDetection.min.js
+magazine-frontend/_framework/js/magazineAnimationEngine.min.js
+magazine-frontend/_framework/js/magazineBuilder.min.js
+magazine-frontend/_framework/js/magazineCoreMetrics.min.js
+magazine-frontend/_framework/js/magazineInteractiveLibrary.min.js
+magazine-frontend/_framework/js/magazineJavaScriptEngine.min.js
+magazine-frontend/_framework/js/magazinePageAttachment.min.js
+magazine-frontend/_framework/js/magazinePageLoader.min.js
+magazine-frontend/_framework/js/magazineProductInteractions_v2.min.js
+magazine-frontend/_framework/js/magazineProductInteractions.min.js

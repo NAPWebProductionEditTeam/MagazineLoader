@@ -1,0 +1,97 @@
+/**
+ * Magazine Structure 
+ */
+ 
+  
+#magazineHolder {
+	font-size: $base-font-size;
+	line-height: $base-line-height; 
+	margin: 0 auto;
+	overflow: hidden;
+	position: relative;
+	width: $magazine-container-width;
+}
+
+#magazineLoader {
+	background: url($framework-image-path + 'styleGuide/miniLoader.gif') 20px 9px no-repeat white;
+	//background: image-url(styleGuide/miniLoader.gif);// 20px 9px no-repeat white;
+	border-top: 1px solid #efefef;
+	bottom: 0;
+	display: none; 
+	height: 35px; 
+	font-family: $bodyCopy; 
+	left: 0;
+	line-height: 35px; 
+	padding: 0 0 0 50px;
+	position: absolute;
+	text-transform: uppercase;
+	width: $magazine-container-width - 50;
+	z-index: 4999;
+}
+
+/**
+ * Magazine Pages
+ */
+
+#magazinePages,
+#magazinePages #totalIssuePages,
+#magazinePages #totalIssuePages .page {
+	height: $magazine-container-height;
+}
+
+#totalIssuePages {
+	position: absolute;
+	top: 0;
+
+	.page {
+		float: left;
+		list-style: none inside;
+		overflow: hidden;
+		position: relative;
+		width: $magazine-container-width;
+		height: $magazine-container-height;
+	}
+	
+	.page[data-status="loaded"] {
+		 background: none;
+	}
+}
+ 
+.magazineContent {
+	font-family: $bodyCopy; 
+	font-size: $base-font-size;
+	line-height: $base-line-height;
+	position: absolute;
+	height: $magazine-container-height;
+	width: $magazine-container-width;
+}
+
+#magazinePages {
+
+	.page.debug {
+		background: url($framework-image-path + 'styleGuide/gridBackground.png') no-repeat; 
+
+		.magazineContent div {
+			border: 1px solid black;
+			box-sizing: border-box;
+			background: rgba(255, 0, 0, 0.6);
+		}
+	} 
+
+	.page[data-status="loading"], .loading  {
+		background: url($framework-image-path + 'styleGuide/loader.gif') center center no-repeat; 
+	}
+}
+
+/**
+ * Magazine Generic Classes
+ */
+
+.clear {clear: both; height: 0; overflow: hidden;}
+
+.separator-dotted {
+    background: #fff url($framework-image-path + 'styleGuide/separator-dotted.gif') repeat-y center top;
+}
+
+.hidden { display: hidden; }
+.none { display: none; }

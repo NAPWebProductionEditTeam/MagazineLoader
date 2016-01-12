@@ -1,0 +1,36 @@
+/* Blueprint framework - don't touch */
+
+// Here is where you can define your constants for your application and to configure the blueprint framework.
+// Feel free to delete these if you want keep the defaults:
+
+$magazine-grid-columns: 50;
+$magazine-container-width: 950px;
+$magazine-grid-margin: 0px;
+$magazine-grid-extend-x: 5px;
+$magazine-grid-extend-y: 4px;
+
+$magazine-grid-rows: 39;
+$magazine-container-height: 624px;
+
+// Use this to calculate the width based on the total width.
+// Or you can set $blueprint-grid-width to a fixed value and unset $magazine-container-width -- it will be calculated for you.
+$blueprint-grid-width: ($magazine-container-width + $magazine-grid-margin) / $magazine-grid-columns - $magazine-grid-margin;
+$magazine-grid-height: ($magazine-container-height + $magazine-grid-margin) / $magazine-grid-rows - $magazine-grid-margin;
+
+$base-font-size: 13px;
+$base-line-height: 17px;
+
+$framework-image-path: '../images/';
+$framework-fonts-path: '/alfresco/nap/webAssets/magazine/_framework/fonts/';
+$framework-css-path: '../css/';
+
+// import css3 compass //
+@import 'compass/css3';
+
+// Load fonts
+@import "fonts";
+
+// framework
+@import "layouts";
+@import "components";
+@import "tweaks";

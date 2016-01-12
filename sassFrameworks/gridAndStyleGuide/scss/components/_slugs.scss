@@ -1,0 +1,138 @@
+// top left slug
+.slugLeft {
+    @extend .push-down-1;
+    @extend .push-right-2;
+    width: 400px;
+    font-family: $ModernNAP-Display; 
+    font-size: 17px;
+    text-transform: uppercase;
+    z-index: 1;
+}
+
+.slugRight {
+    @extend .push-down-1;
+    @extend .pull-left-2;
+    width: 400px;
+    font-family: $ModernNAP-Display; 
+    font-size: 17px;
+    text-transform: uppercase;
+    z-index: 1;
+}
+
+.editSlug, .beautySlug, .travelSlug {
+	background-repeat: no-repeat;
+}
+
+.editSlug {
+    width: 157px;
+    height: 49px;
+    background-image: url(/alfresco/nap/webAssets/magazine/_shared/contents/slug.png);
+    background-size: 157px 49px;
+    
+    @media  only screen and (-webkit-min-device-pixel-ratio: 1.3),
+    only screen and (-o-min-device-pixel-ratio: 13/10),
+    only screen and (min-resolution: 120dpi) {
+        background-image: url(/alfresco/nap/webAssets/magazine/_shared/contents/slug@2x.png);
+    }
+    
+    @at-root {
+        .lang-zh & {
+            width: 167px;
+            height: 48px;
+            background-image: url(/alfresco/nap/webAssets/magazine/_shared/contents/slug_zh.png);
+            background-size: 167px 48px;
+            
+            @media  only screen and (-webkit-min-device-pixel-ratio: 1.3),
+            only screen and (-o-min-device-pixel-ratio: 13/10),
+            only screen and (min-resolution: 120dpi) {
+                background-image: url(/alfresco/nap/webAssets/magazine/_shared/contents/slug_zh@2x.png);
+            }
+        }
+    }
+}
+
+.beautySlug {
+    width: 173px;
+    height: 63px;
+    background-image: url(/alfresco/nap/webAssets/magazine/_shared/contents/beautySlug.png);
+    background-size: 173px 63px;
+    
+    @media  only screen and (-webkit-min-device-pixel-ratio: 1.3),
+    only screen and (-o-min-device-pixel-ratio: 13/10),
+    only screen and (min-resolution: 120dpi) {
+        background-image: url(/alfresco/nap/webAssets/magazine/_shared/contents/beautySlug@2x.png);
+    }
+    
+    @at-root {
+        .lang-fr & {
+            width: 194px;
+            background-image: url(/alfresco/nap/webAssets/magazine/_shared/contents/beautySlug_fr.png);
+            background-size: 194px 49px;
+            
+            @media only screen and (-webkit-min-device-pixel-ratio: 1.3),
+            only screen and (-webkit-min-device-pixel-ratio: 1.25),
+            only screen and (min-resolution: 120dpi) {
+                background-image: url(/alfresco/nap/webAssets/magazine/_shared/contents/beautySlug_fr@2x.png);
+            }
+        }
+        
+        .lang-zh & {
+            background-image: url(/alfresco/nap/webAssets/magazine/_shared/contents/beautySlug_zh.png);
+            
+            @media only screen and (-webkit-min-device-pixel-ratio: 1.3),
+            only screen and (-webkit-min-device-pixel-ratio: 1.25),
+            only screen and (min-resolution: 120dpi) {
+                background-image: url(/alfresco/nap/webAssets/magazine/_shared/contents/beautySlug_zh@2x.png);
+            }
+        }
+    }
+}
+
+.travelSlug {
+    width: 146px;
+    height: 49px;
+    background-image: url(/alfresco/nap/webAssets/magazine/_shared/contents/travelSlug.png);
+    background-size: 146px 49px;
+    
+    @media  only screen and (-webkit-min-device-pixel-ratio: 1.3),
+    only screen and (-o-min-device-pixel-ratio: 13/10),
+    only screen and (min-resolution: 120dpi) {
+        background-image: url(/alfresco/nap/webAssets/magazine/_shared/contents/travelSlug@2x.png);
+    }
+    
+    @at-root {
+        .lang-de & {
+            width: 137px;
+            background-image: url(/alfresco/nap/webAssets/magazine/_shared/contents/travelSlug_de.png);
+            background-size: 137px 49px;
+            
+            @media only screen and (-webkit-min-device-pixel-ratio: 1.3),
+            only screen and (-webkit-min-device-pixel-ratio: 1.25),
+            only screen and (min-resolution: 120dpi) {
+                background-image: url(/alfresco/nap/webAssets/magazine/_shared/contents/travelSlug_de@2x.png);
+            }
+        }
+        
+        .lang-fr & {
+            width: 172px;
+            background-image: url(/alfresco/nap/webAssets/magazine/_shared/contents/travelSlug_fr.png);
+            background-size: 172px 49px;
+            
+            @media only screen and (-webkit-min-device-pixel-ratio: 1.3),
+            only screen and (-webkit-min-device-pixel-ratio: 1.25),
+            only screen and (min-resolution: 120dpi) {
+                background-image: url(/alfresco/nap/webAssets/magazine/_shared/contents/travelSlug_fr@2x.png);
+            }
+        }
+        
+        .lang-zh & {
+            background-image: url(/alfresco/nap/webAssets/magazine/_shared/contents/travelSlug_zh.png);
+            
+            @media only screen and (-webkit-min-device-pixel-ratio: 1.3),
+            only screen and (-webkit-min-device-pixel-ratio: 1.25),
+            only screen and (min-resolution: 120dpi) {
+                background-image: url(/alfresco/nap/webAssets/magazine/_shared/contents/travelSlug_zh@2x.png);
+            }
+        }
+    }
+}

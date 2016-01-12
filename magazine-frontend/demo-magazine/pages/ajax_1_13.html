@@ -1,0 +1,56 @@
+<!-- sample CSS -->
+<style type="text/css">
+	#animateText1 {
+		position:absolute;
+		top:50px;
+		left:350px;
+		}
+	#animateText2 {
+		position:absolute;
+		top:120px;
+		left:120px;
+		}
+	#animateText3 {
+		position:absolute;
+		top:150px;
+		left:420px;
+		}
+	/* sample webkit animation */
+        @-webkit-keyframes anim-Custom-Tester {
+            0%   { -webkit-transform: rotate(0deg) scaleY(1.0); left:41px; top:67px; }
+            25%   { -webkit-transform: rotate(90deg) scaleY(2.0); left:141px; top:67px; }
+            50%   { -webkit-transform: rotate(180deg) scaleY(1.0); left:241px; top:167px; }
+            75% { -webkit-transform: rotate(270deg) scaleY(2.0); left:241px; top:267px; }
+            100% { -webkit-transform: rotate(360deg) scaleY(1.0); left:341px; top:367px; }
+            }
+		/* sample moz animation */
+        @-moz-keyframes anim-Custom-Tester {
+            0%   { -moz-transform: rotate(0deg) scaleY(1.0); left:41px; top:67px; }
+            25%   { -moz-transform: rotate(90deg) scaleY(2.0); left:141px; top:67px; }
+            50%   { -moz-transform: rotate(180deg) scaleY(1.0); left:241px; top:167px; }
+            75% { -moz-transform: rotate(270deg) scaleY(2.0); left:241px; top:267px; }
+            100% { -moz-transform: rotate(360deg) scaleY(1.0); left:341px; top:367px; }
+            }
+	/* sample ie animation */
+        @-ms-keyframes anim-Custom-Tester {
+            0%   { -ms-transform: rotate(0deg) scaleY(1.0); left:41px; top:67px; }
+            25%   { -ms-transform: rotate(90deg) scaleY(2.0); left:141px; top:67px; }
+            50%   { -ms-transform: rotate(180deg) scaleY(1.0); left:241px; top:167px; }
+            75% { -ms-transform: rotate(270deg) scaleY(2.0); left:241px; top:267px; }
+            100% { -ms-transform: rotate(360deg) scaleY(1.0); left:341px; top:367px; }
+            }
+</style>
+<!-- example using custom CSS to position -->
+<div id="animateText1" class="anim-FadeIn-Time-1000-Pause-500-linear">fade in</div>
+<!-- example using grid position -->
+<div id="gridAnim1" class="anim-FadeOut-Time-1000-Pause-0-linear push-right-5 push-down-5 span-5">fade out</div>
+<!-- example using custom CSS to position -->
+<div id="animateText2" class="anim-FromRight-Time-1000-Pause-1500-linear">From right</div>
+<!-- example using grid position -->
+<div id="gridAnim2" class="anim-FromLeft-Time-1000-Pause-500-linear push-right-38 push-down-10 span-5">From left</div>
+<!-- example using custom CSS to position -->
+<div id="animateText3" class="anim-FromTop-Time-1000-Pause-2500-linear">From top</div>
+<!-- example using grid position -->
+<div id="gridAnim3" class="anim-FromBottom-Time-1000-Pause-2500-linear push-right-25 push-down-20 span-5">From bottom</div>
+<!-- example custom animation -->
+<div id="customanim1" class="anim-Custom-Tester-Time-1000-Pause-0-Loop-infinite-Direction-alternate">Custom animation</div>

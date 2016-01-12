@@ -1,0 +1,118 @@
+%credits {
+    position: absolute;
+    display: block;
+    cursor: pointer;
+    z-index: 10;
+}
+
+%creditsWhole {
+    @extend %credits;
+    padding: 5px 10px;
+    background: #FFF;
+    line-height: 13px;
+    
+    p {
+        font-size: 12px;
+        line-height: 13px;
+    }
+    
+    @at-root {
+        .lang-zh & {
+            p {
+                font-family: $Hei;
+                letter-spacing: 0 !important;
+                font-size: 10px;
+                line-height: 12px;
+                font-size: 9px\9;
+            }
+        }
+    }
+}
+
+.creditsWholeLeft {
+    @extend %creditsWhole;
+    left: 28px;
+    bottom: 27px;
+}
+
+.creditsWholeRight {
+    @extend %creditsWhole;
+    right: 19px;
+    bottom: 26px;
+    
+    p {
+        text-align: right;
+    }
+}
+
+%creditsHolder {
+    @extend %credits;
+    font-size: 10px;
+    line-height: 10px;
+    text-transform: uppercase;
+    text-indent: -999999px;
+    
+    @at-root {
+        .lang-fr & {
+            background: url($framework-image-path + 'styleGuide/credits_fr.png') no-repeat scroll right center transparent;
+        }
+        
+        .lang-zh & {
+            height: 48px;
+            background: url($framework-image-path + 'styleGuide/credits_zh.png') no-repeat right transparent;
+        }
+    }
+}
+
+.creditsHolderLeft {
+    @extend %creditsHolder;
+    width: 8px;
+    height: 48px;
+    background: url($framework-image-path + 'styleGuide/creditTransparent.png') no-repeat right transparent;
+    
+    @at-root {
+        .lang-zh & {
+            width: 11px;
+        }
+    }
+}
+
+.creditsHolderRight {
+    @extend %creditsHolder;
+    width: 28px;
+    height: 49px;
+    background: url($framework-image-path + 'styleGuide/creditRightTransparent.png') no-repeat right transparent;
+}
+
+%creditsHolderWhite {
+    @extend %creditsHolder;
+    
+    @at-root {
+        .lang-fr & {
+            background: url($framework-image-path + 'styleGuide/credits_white_fr.png') no-repeat scroll right center transparent;
+        }
+        
+        .lang-zh & {
+            background: url($framework-image-path + 'styleGuide/credits_zh_white.png') no-repeat right transparent;
+        }
+    }
+}
+
+.creditsHolderLeftWhite {
+    @extend %creditsHolderWhite;
+    width: 8px;
+    height: 50px;
+    background: url($framework-image-path + 'styleGuide/creditWTransparent.png') no-repeat right transparent;
+}
+
+.creditsHolderRightWhite {
+    @extend %creditsHolderWhite;
+    width: 28px;
+    height: 48px;
+    background: url($framework-image-path + 'styleGuide/creditRightWTransparent.png') no-repeat right transparent;
+}
+
+.creditsNone {
+    display: none;
+    visibility: hidden;
+}

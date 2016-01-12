@@ -1,0 +1,64 @@
+
+<script type='text/javascript'>
+(function() {
+var useSSL = 'https:' == document.location.protocol;
+var src = (useSSL ? 'https:' : 'http:') +
+'//www.googletagservices.com/tag/js/gpt.js';
+document.write('<scr' + 'ipt src="' + src + '"></scr' + 'ipt>');
+})();
+</script>
+
+
+<script type="text/javascript" src="/alfresco/nap/webAssets/magazine/_framework/js/hammer/hammer.min.js?v=1.0" ></script>
+
+<style type="text/css">
+  * {margin:0;} 
+  #iframeGPT {width: 950px; height:624px}
+</style>
+
+<script type="text/javascript">
+  function setupAdvertGesture() {
+    var advertiFrameDeviceGesture = new Hammer(document.getElementById("iframeGPT"), {
+      // adjust defaults //
+      prevent_default:false,
+      swipe_min_distance:100,
+      swipe_time:1000
+    });
+    /* Set up swipe gestures */
+    advertiFrameDeviceGesture.onswipe = function(e){
+      if (e.direction == "left") {
+        window.parent.magazineBuilder.goToNextPage();
+      };
+      if (e.direction == "right") {
+        window.parent.magazineBuilder.goToPreviousPage();
+      };
+    }
+  };
+
+
+</script>
+
+<div id="iframeGPT">
+<div id="div-gpt-ad-1374832143570-0">
+  <script type='text/javascript'>
+    googletag.cmd.push(function() {
+      googletag.defineSlot('/9237/netaporter/edit/position1/intl', [950, 624],'div-gpt-ad-1374832143570-0')
+        .addService(googletag.pubads())
+        .setTargeting("language", "en")
+    googletag.pubads().enableSyncRendering();
+    googletag.pubads().enableSingleRequest();
+      googletag.enableServices();
+      googletag.display('div-gpt-ad-1374832143570-0');
+  });
+  </script>
+</div>
+
+</div>
+
+<script type="text/javascript">
+      window.onload=function() {
+        if (window.parent.magazineBuilder.get_IfUsingMobileBrowser()) {
+          setupAdvertGesture();
+        }
+      };
+</script>

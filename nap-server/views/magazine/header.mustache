@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width,initial-scale=1"><!-- Application styles. -->
+
+  		<link rel="stylesheet" href="/styles/style.css">
+  		<link rel="stylesheet" href="/styles/magazine.css">
+		<title>{{pageTitle}}</title>
+	</head>
+	<body>
+		<div role="main" id="main" class="nap-new container">
+			<header>HEADER</header>
+
+			<div id="magazine-layout" class="magazine">
+				
+				<ul id="top-nav" class="top-nav">
+					{{#topMenu}}
+						<li class="{{classes}}" > 
+							<a href="{{index}}">{{title}}</a>
+						</li>
+					{{/topMenu}}
+				</ul>
+				<div class="content">
+
+

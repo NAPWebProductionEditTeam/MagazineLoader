@@ -1,0 +1,35 @@
+/* Magazine font library */
+
+/* OLD STYLES
+ * This are only here until the new modern files are implemented
+ */
+$headingFont: 'ModernHeading';
+$headingFontItalic: 'ModernHeadingItalic';
+
+/* MODERN NAP HEADER STYLES
+ * This are only here until the new modern files are implemented
+ */
+$ModernNAP-Display: 'ModernNAP-Display', Georgia, "Times New Roman", serif;
+$ModernNAP-DisplayItalic: 'ModernNAP-DisplayItalic', Georgia, "Times New Roman", serif;
+$ModernNAP-Subhead: 'ModernNAP-Subhead', Georgia, "Times New Roman", serif;
+$ModernNAP-SubheadItalic: 'ModernNAP-SubheadItalic', Georgia, "Times New Roman", serif;
+$ModernNAP-SuperDisplay: 'ModernNAP-SuperDisplay', Georgia, "Times New Roman", serif;
+$ModernNAP-SuperDisplayItal: 'ModernNAP-SuperDisplayItal', Georgia, "Times New Roman", serif;
+$ModernNAP-Text: 'ModernNAP-Text', Georgia, "Times New Roman", serif;
+$ModernNAP-TextItalic: 'ModernNAP-TextItalic', Georgia, "Times New Roman", serif;
+$MsPorter: "MsPorter", Georgia, "Times New Roman", serif;
+
+/* BODY COPY STYLES 
+ * Magazine body copy, regular and bold
+ */ 
+$bodyCopy: 'GillSans',Arial, sans serif;
+$bodyCopyBold: 'GillSansBold',Arial, sans serif;
+$bodyCopyLight: 'GillSansLight',Arial, sans serif;
+
+/***CHINESE MSUNG FONT FAMILY****/
+$MSungPRC-Light: 'ModernNAP-Text', "MSung PRC Light", "Microsoft YaHei", Hei, Hei Ti, SimHei, STXihei, sans-serif; 
+$MSungPRC-Medium: 'ModernNAP-Text', "MSung PRC Medium", "Microsoft YaHei", Hei, Hei Ti, SimHei, STXihei, sans-serif; 
+$MSungPRC-Bold: 'ModernNAP-Text', "MSung PRC Bold", "Microsoft YaHei", Hei, Hei Ti, SimHei, STXihei, sans-serif; 
+$Hei: 'GillSans', "微软雅黑","Microsoft YaHei", Hei, Hei Ti, SimHei, STXihei, sans-serif; 
+$HeiBold : 'GillSansBold', "微软雅黑","Microsoft YaHei", Hei, Hei Ti, SimHei, STXihei, sans-serif; 
+$MSungPRC-Quote: 'ModernNAP-DisplayItalic', "MSung PRC Bold", "Microsoft YaHei", Hei, Hei Ti, SimHei, STXihei, sans-serif; 

@@ -1,0 +1,147 @@
+/*-------------- MAGAZINE NAVIGATION ---------------*/
+.mag-nav {padding-left:715px;position:absolute;}
+.mag-nav-right-arrow{margin-left:890px;margin-top:243px;position:absolute;}
+.mag-nav-left-arrow {margin-left:0; margin-top:251px; position:absolute;}
+#magazine-container{display: block; width: 950px; background-color: #f2f2f2;}
+#magazine-header{ display: block;    float: left;    width: 846px;}
+#topnav-images{display: inline; float: right; width: 150px;}
+#bottom-nav-arrow-left{display: inline; float: left; width: 85px; height: 510px; clear:both;}
+#bottom-nav-arrow-right{display: inline; float: left; width: 65px; height: 510px;}
+#magazine-content{display: inline; float: left; width: 780px; height: 510px; position:relative;}
+#magazine-content img{display: inline; float: left;}
+#magazine-nav-right{display: inline; float: left; position: relative; width: 20px; height: 510px;}
+#selected-tab{z-index: 3; margin-left: -3px;}
+.unselected-tab{z-index: 3; margin-left: -3px;}
+#left-big-arrow{display: inline; float: right; margin-top: 445px; margin-right: 20px;}
+#right-big-arrow{display: inline; float: left; margin-top: 437px;}
+#main_mag {width:950px; height:535px; background-color:#f2f2f2;}
+#mag_content {width:780px;  }
+#left_column { width:390px; float:left; }
+#right_column {float: right; width:390px;  position:relative;}
+/*white hover box for magazine*/
+#cover img{float:left; padding:0; border:0; margin:0;}
+#cover-rollovers{padding:0; border:0; margin:0;}
+#cover-rollovers img{border:0; margin:0; padding:0;}
+#cover-rollovers-copy{float:right;}
+#magazine-container {height:535px; width:950px}
+#magazine-container td {background-color:#F2F2F2}
+#magazine-container-left {height:495px; width:79px}
+#magazine-container-right {height:495px; width:94px}
+#magazine-container-top {height:22px; width:950px}
+#magazine-container-bottom {height:18px; width:950px}
+#magazine-container-main-left {text-align:left}
+#magazine-container-main-right {text-align:right}
+#magazine-container #textgif {left:464px; top:22px}
+.pageContentHolder{position:relative;}
+.pageContentHolder.ftbc{position:absolute;}
+#mag-container {height:535px; width:950px}
+#mag-container td {background-color:#F2F2F2}
+#mag-container-left, #mag-container-right {height:495px}
+#mag-container-left {width:79px}
+mag-container-main-mid {width:7px}
+#mag-container-right {width:94px}
+#mag-container-top, #mag-container-bottom {width:950px}
+#mag-container-top {height:22px}
+#mag-container-bottom {height:18px}
+#mag-container-main {width:777px}
+#mag-container-main-left, #mag-container-main-right {width:385px}
+#mag-container-main-left {text-align:left}
+#mag-container-main-right {text-align:right}
+#mag-container-main #textgif {left:79px; top:22px}
+#mag-container-main-left #textgif {left:79px; top:22px}
+#mag-container-main-right #textgif {left:464px; top:22px}
+
+/*-------------------- COVER ----------------------*/
+#feeder-container{float:left;background-color:#000000;overflow:hidden;height:22px;}
+#feeder{display:inline;position:absolute;height:22px;overflow:hidden;}
+#feeder2{display:inline;position:absolute;background-color:#000000;height:22px;overflow:hidden;}
+#feeder-mask{position:relative;overflow:hidden;width:950px;height:30px;}
+#feeder img{display:inline;float:left;cursor: pointer;}
+#feeder2 img{display:inline;float:left;cursor: pointer;}
+
+/*--------------- EDITORIAL STYLES ----------------*/
+/*tab view shadows*/		
+.shadow-btm {background:url('/nap/build/2013.04.04/images/tab-btm.gif');display:block;	width:100%;height:13px;	background-repeat:no-repeat; margin-bottom:10px;}
+.top-line { display:block;height:1px;}
+/*white hover box for magazine*/
+.whitebox{position:absolute; z-index:2; font-weight:bold; padding:7px; color:#000000; background-color:#FFFFFF;}
+.whitebox:hover{text-decoration:none;}
+#textgif{position:absolute; left:0; top:0; z-index:200;}
+.click{float:right; margin-top:10px;}
+.top10{color:#000000; line-height:12px; font-size:0.7em}
+.top10:link{color:#000000; line-height:12px;}
+.top10:visited{color:#000000; line-height:12px;}
+.top10:hover{color:#999999;}
+.top10:active{color:#000000; line-height:12px;}
+
+/*----------------- FOREIGN PAGES -----------------*/
+/*French&German*/
+.foreign_popup{border-top: 1px solid #999; margin: 16px 12px}
+.foreign_pages td{vertical-align:top}
+.foreign_pages, .foreign_pages td, .foreign_pages td p, .foreign_pages p{font-size:11px; margin-bottom:15px; color:#333333;}
+.foreign_pages a{text-decoration:underline; font-weight:bold;}
+#menu{padding-top:45px; float:left; width:215px;}
+#foreign-content{padding-top:45px; float:right; width:656px;}
+#foreign-content h2{font-size:13px; font-weight:bold;}
+#column1{float:left; width:290px;}
+#column2{float:right; width:290px;}
+
+/*new issue cms*/
+#main_mag{width:950px; height:535px; background-color:#f2f2f2;}
+#mag_content{width:780px;  margin-left:85px;}
+
+/*----------------- NEW DESIGNER FOR FALL LANDING PAGE -----------------*/
+/*NEW DESIGNER*/
+#kara {position:absolute;top:598px;left:213px;}
+#dolce  {position:absolute;top:843px;left:213px;}
+#erdem  {position:absolute;top:1092px;left:213px;}
+#elle  {position:absolute;top:1342px;left:213px;}
+#liz  {position:absolute;top:472px;left:449px;}
+#sonia  {position:absolute;top:843px;left:449px;}
+#charlotte  {position:absolute;top:1092px;left:449px;}
+#ck  {position:absolute;top:1342px;left:449px;}
+#balmain {position:absolute;top:472px;left:686px;}
+#sigerson {position:absolute;top:719px;left:686px;}
+#aqua  {position:absolute;top:1092px;left:686px;}
+#aka  {position:absolute;top:1342px;left:686px;}
+#bamford {position:absolute;top:216px;left:924px;}
+#emanuel  {position:absolute;top:594px;left:924px;}
+#apc  {position:absolute;top:842px;left:924px;}
+#bally  {position:absolute;top:1092px;left:924px;}
+#william  {position:absolute;top:1342px;left:924px;}
+#submit1 {position:absolute;top:340px;left:0px;}
+#submit2 {position:absolute;top:1390px;left:855px;}
+
+/*---------------------MAGAZINE OVERLAY--------------------------------*/
+.magazine-overlay #lightbox-top #lightbox-close {display:none;}
+.magazine-overlay #lightbox-top .close {background:url('/nap/build/2013.04.04/images/magazine/close.gif') right no-repeat; padding-right:20px; color:#fff; text-transform:uppercase; display:block; position:absolute; top:10px; right:20px;}
+.magazine-overlay #lightbox-top {background:url('/nap/build/2013.04.04/images/magazine/overlay-top.png') no-repeat; height:13px; width:878px;}
+.magazine-overlay #lightbox-middle {background:url('/nap/build/2013.04.04/images/magazine/overlay-middle.png') repeat-y; width:878px;}
+.magazine-overlay #lightbox-middle iframe {width:862px; margin-left:4px;}
+.magazine-overlay #lightbox-bottom {background:url('/nap/build/2013.04.04/images/magazine/overlay-bottom.png') no-repeat; height:25px; width:878px;}
+.magazine-overlay #lightbox-middle span {color:#fff;}
+
+/*------------- CONTENT MANAGED PAGE FOR NO SEARCH RESULTS (parts of this page are not content managed) ------------*/
+/*no search results*/
+#no_search_results #designers, #info, #item, #sale{float:left; width:260px; margin-top:30px; padding-top:10px; padding-bottom:10px;}
+#no_search_results #designers, #info {border-right:dotted 1px #000; width:240px; padding-right:10px;}
+#no_search_results #cms-no-results #designers, #item {margin-top:10px;}
+#no_search_results #item, #sale{margin-left:20px;}
+#no_search_results #info{ clear:both;}
+#no_search_results h1{ font-size:600%; font-family: Georgia, "Times New Roman", Times, serif;}
+#no_search_results h2{ font-size:150%; font-weight:normal; font-family:Georgia, "Times New Roman", Times, serif; text-transform: none;}
+#no_search_results h3{ font-size:120%; font-weight:normal; font-family:Georgia, "Times New Roman", Times, serif; text-transform: none; font-size:125%;}
+#no_search_results .search-term{ font-size:150%; font-family:Georgia, "Times New Roman", Times, serif; margin-bottom:20px; display:block; margin-bottom:0;}
+#no_search_results #cms-no-results a{padding:2px; line-height:1.5;}
+#no_search_results #cms-no-results a:hover{color:#FFF; background:#000; text-decoration:none; padding:2px;}
+#no_search_results #cms-no-results{float:left;}
+#no_search_results #cms-no-results h2{ font-size:140%;}
+#no_search_results ul{ list-style:none; margin-top:10px;}
+#no_search_results #sale p{ margin-top:10px;}
+#no_search_results #sale p a{ font-weight:bold;}
+#no_search_results #cms-no-results .search-link{ margin-top:10px; text-transform:uppercase; font-weight:bold; display:block; padding:0;}
+#no_search_results #cms-no-results .search-link:hover{text-decoration:underline; background-color:#FFF; color:#000; padding:0;}
+#no-search-results{width:100%; margin: 80px 0 50px;}
+#no_search_results .no-results-bg{ float:right;}
+#no_search_results .buttons{ margin:10px 0 30px 0;}
+#no_search_results .buttons img{ margin-right:20px;}

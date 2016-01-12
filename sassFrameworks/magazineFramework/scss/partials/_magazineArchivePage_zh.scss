@@ -1,0 +1,17 @@
+@import "compass/css3";
+
+
+body.lang-zh #main #content{
+#archive {
+	
+	#archiveHeading {
+		background: url($framework-image-path + 'styleGuide/h2_background_zh.jpg') no-repeat 50% 0%;
+	}
+
+	@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2) {
+        #archiveHeading{
+            background: url($framework-image-path + 'styleGuide/h2_background_zh@2x.jpg') no-repeat 50% 0%;
+        }
+    }
+	}
+}

@@ -1,0 +1,201 @@
+/* Magazine font library */
+@import 'compass/css3';
+
+/* OLD STYLES
+ * This are only here until the new modern files are implemented
+ */
+
+$headingFont: 'ModernHeading', Georgia, "Times New Roman", serif;
+$headingFontItalic: 'ModernHeading', Georgia, "Times New Roman", serif;
+$regular-montoype-path: "monotypeModern/regular/";
+$italic-montoype-path: "monotypeModern/italic/";
+
+@font-face {
+                font-family: $headingFont;
+                font-style: normal;
+                font-weight: normal;
+                src: url($framework-fonts-path + $regular-montoype-path + '079658c5-b7e1-45fa-ba54-51bb27ac5a3d.eot'); /* IE9 Compat Modes */
+                src: url($framework-fonts-path + $regular-montoype-path + '079658c5-b7e1-45fa-ba54-51bb27ac5a3d.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+                     url($framework-fonts-path + $regular-montoype-path + '0852461a-60c6-46b0-9dc3-6fe02e5ef8e2.woff') format('woff'), /* Modern Browsers */
+                     url($framework-fonts-path + $regular-montoype-path + 'd8520889-4ea2-43f5-a8ca-28e053c24461.ttf')  format('truetype'), /* Safari, Android, iOS */
+                     url($framework-fonts-path + $regular-montoype-path + 'b6e005b4-fc66-47ee-b7b3-1ed656cee80a.svg#'+$headingFont) format('svg'); /* Legacy iOS */
+              };
+ 
+@font-face {
+                font-family: $headingFontItalic;
+                font-weight: normal;
+                font-style: italic;
+                src: url($framework-fonts-path + $italic-montoype-path + 'ff8943e6-12ab-467c-8614-a2e36d583ceb.eot');
+                src: url($framework-fonts-path + $italic-montoype-path + 'ff8943e6-12ab-467c-8614-a2e36d583ceb.eot?#iefix') format('embedded-opentype'),
+                     url($framework-fonts-path + $italic-montoype-path + 'e3721349-5441-4b87-b252-29972ab6cd99.woff') format('woff'),
+                     url($framework-fonts-path + $italic-montoype-path + 'b9d26402-75b9-4512-a8cf-0a69d37c4e43.ttf')  format('truetype'),
+                     url($framework-fonts-path + $italic-montoype-path + 'ce5f1ae5-2ffb-47ac-ba14-c026c81c48f2.svg#'+$headingFontItalic) format('svg');
+              };
+ 
+/* MODERN NAP HEADER STYLES
+ * This are only here until the new modern files are implemented
+ */
+
+// DISPLAY FONT
+
+$ModernNAP-Display: 'ModernNAP-Display', Georgia, "Times New Roman", serif;
+$ModernNAP-DisplayItalic: 'ModernNAP-Display', Georgia, "Times New Roman", serif;
+$display-nap-path: "modernNAP/display/";
+$displayitalic-nap-path: "modernNAP/displayItalic/";
+
+@font-face {
+                font-family: $ModernNAP-Display;
+                font-style: normal;
+                font-weight: normal;
+                src: url($framework-fonts-path + $display-nap-path + 'bcb1be74-363e-409f-a75e-30169ffd01b2.eot'); /* IE9 Compat Modes */
+                src: url($framework-fonts-path + $display-nap-path + 'bcb1be74-363e-409f-a75e-30169ffd01b2.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+                     url($framework-fonts-path + $display-nap-path + 'ea7b4b60-1e11-4925-adf6-2642257c10b1.woff') format('woff'), /* Modern Browsers */
+                     url($framework-fonts-path + $display-nap-path + '10dd1f56-a8ba-4861-a346-388806e460dd.ttf')  format('truetype'), /* Safari, Android, iOS */
+                     url($framework-fonts-path + $display-nap-path + '17344bbb-26ea-491e-9f99-21a38c24308b.svg#'+$ModernNAP-Display) format('svg'); /* Legacy iOS */
+              };
+ 
+@font-face {
+                font-family: $ModernNAP-DisplayItalic;
+                font-style: italic;
+                font-weight: normal;
+                src: url($framework-fonts-path + $displayitalic-nap-path + 'e22aee13-0b1c-4040-8fc9-51a68580faaa.eot');
+                src: url($framework-fonts-path + $displayitalic-nap-path + 'e22aee13-0b1c-4040-8fc9-51a68580faaa.eot?#iefix') format('embedded-opentype'),
+                     url($framework-fonts-path + $displayitalic-nap-path + '457355d5-65ee-4749-96db-ea452d063bbd.woff') format('woff'),
+                     url($framework-fonts-path + $displayitalic-nap-path + '39bb8f94-e077-4e8d-b2b6-44c4678fbaae.ttf')  format('truetype'),
+                     url($framework-fonts-path + $displayitalic-nap-path + 'e3da63fc-70a7-4867-9bfd-ced0d0515127.svg#'+$ModernNAP-DisplayItalic) format('svg');
+              };
+
+// SUBHEAD FONT
+ 
+$ModernNAP-Subhead: 'ModernNAP-Subhead', Georgia, "Times New Roman", serif;
+$ModernNAP-SubheadItalic: 'ModernNAP-SubheadItalic', Georgia, "Times New Roman", serif;
+$subhead-nap-path: "modernNAP/subhead/";
+$subheaditalic-nap-path: "modernNAP/subheadItalic/";
+
+@font-face {
+                font-family: $ModernNAP-Subhead;
+                font-style: normal;
+                font-weight: normal;
+                src: url($framework-fonts-path + $subhead-nap-path + '2e6edf83-9f37-4c68-a5b2-4d65870f163b.eot');
+                src: url($framework-fonts-path + $subhead-nap-path + '2e6edf83-9f37-4c68-a5b2-4d65870f163b.eot?#iefix') format('embedded-opentype'),
+                     url($framework-fonts-path + $subhead-nap-path + '7f0e9877-893e-4907-94ad-ecef628a528c.woff') format('woff'),
+                     url($framework-fonts-path + $subhead-nap-path + '6eb3faa9-49cd-4f04-b307-2f56ecb38b8c.ttf')  format('truetype'),
+                     url($framework-fonts-path + $subhead-nap-path + '2ab5eab6-4a9a-4918-bc2c-545e68dffe88.svg#'+$ModernNAP-Subhead) format('svg');
+              };
+ 
+@font-face {
+                font-family: $ModernNAP-SubheadItalic;
+                font-style: italic;
+                font-weight: normal;
+                src: url($framework-fonts-path + $subheaditalic-nap-path + 'eea25ab1-5fd3-4d2a-82b4-dbc74ca36a51.eot');
+                src: url($framework-fonts-path + $subheaditalic-nap-path + 'eea25ab1-5fd3-4d2a-82b4-dbc74ca36a51.eot?#iefix') format('embedded-opentype'),
+                     url($framework-fonts-path + $subheaditalic-nap-path + '154f31d8-5daa-4518-a6ff-e0c3592eed9c.woff') format('woff'),
+                     url($framework-fonts-path + $subheaditalic-nap-path + '7417db56-7788-4f4e-8429-445541b86d75.ttf')  format('truetype'),
+                     url($framework-fonts-path + $subheaditalic-nap-path + '369a5655-d8ce-4f5c-9153-16c72197891e.svg#'+$ModernNAP-SubheadItalic) format('svg');
+              };
+  
+
+// SUPER DISPLAY FONT
+ 
+$ModernNAP-SuperDisplay: 'ModernNAP-SuperDisplay', Georgia, "Times New Roman", serif;
+$ModernNAP-SuperDisplayItal: 'ModernNAP-SuperDisplayItal', Georgia, "Times New Roman", serif;
+$superdisplay-nap-path: "modernNAP/superDisplay/";
+$superdisplayital-nap-path: "modernNAP/superDisplayItalic/";
+
+@font-face {
+                font-family: $ModernNAP-SuperDisplay;
+                font-style: normal;
+                font-weight: normal;
+                src: url($framework-fonts-path + $superdisplay-nap-path + 'd254c77e-2d23-499b-b681-99f8b57c3251.eot');
+                src: url($framework-fonts-path + $superdisplay-nap-path + 'd254c77e-2d23-499b-b681-99f8b57c3251.eot?#iefix') format('embedded-opentype'),
+                     url($framework-fonts-path + $superdisplay-nap-path + '4d87a160-455e-4760-a147-b191cf1f3adc.woff') format('woff'),
+                     url($framework-fonts-path + $superdisplay-nap-path + 'c254e3d8-11dd-42b8-b9c5-53d4a046d7bf.ttf')  format('truetype'),
+                     url($framework-fonts-path + $superdisplay-nap-path + '0243b22b-df2c-4d1b-8a9c-bc48cb521a05.svg#'+$ModernNAP-SuperDisplay) format('svg');
+              };
+ 
+@font-face {
+                font-family: $ModernNAP-SuperDisplayItal;
+                font-style: italic;
+                font-weight: normal;
+                src: url($framework-fonts-path + $superdisplayital-nap-path + 'bfdeb5f5-6587-450f-8a7a-eae7f9dfee10.eot');
+                src: url($framework-fonts-path + $superdisplayital-nap-path + 'bfdeb5f5-6587-450f-8a7a-eae7f9dfee10.eot?#iefix') format('embedded-opentype'),
+                     url($framework-fonts-path + $superdisplayital-nap-path + 'a12a1beb-5f37-42d6-be04-9fbd6729a145.woff') format('woff'),
+                     url($framework-fonts-path + $superdisplayital-nap-path + '87e4925a-d0d6-4bc1-a081-433cc9df7b22.ttf')  format('truetype'),
+                     url($framework-fonts-path + $superdisplayital-nap-path + '894e73c8-2539-4de1-8ccd-2b08c712be6b.svg#'+$ModernNAP-SuperDisplayItal) format('svg');
+              };
+  
+ // TEXT FONT
+ 
+$ModernNAP-Text: 'ModernNAP-Text', Georgia, "Times New Roman", serif;
+$ModernNAP-TextItalic: 'ModernNAP-TextItalic', Georgia, "Times New Roman", serif;
+$text-nap-path: "modernNAP/text/";
+$textitalic-nap-path: "modernNAP/textItalic/";
+
+@font-face {
+                font-family: $ModernNAP-Text;
+                font-style: normal;
+                font-weight: normal;
+                src: url($framework-fonts-path + $text-nap-path + '11ccdac5-62c6-4767-9e0f-62c9f28cc6e4.eot');
+                src: url($framework-fonts-path + $text-nap-path + '11ccdac5-62c6-4767-9e0f-62c9f28cc6e4.eot?#iefix') format('embedded-opentype'),
+                     url($framework-fonts-path + $text-nap-path + '9a837b71-bf25-4adf-a558-d0cc7e3f135d.woff') format('woff'),
+                     url($framework-fonts-path + $text-nap-path + 'ab57e36d-0f97-4938-b951-cf157b6af481.ttf')  format('truetype'),
+                     url($framework-fonts-path + $text-nap-path + '26a96945-4693-47e0-97fd-a7555d665775.svg#'+$ModernNAP-Text) format('svg');
+              };
+ 
+@font-face {
+                font-family: $ModernNAP-TextItalic;
+                font-style: italic;
+                font-weight: normal;
+                src: url($framework-fonts-path + $textitalic-nap-path + '4690c8b5-a269-4701-af23-40b47cf8500a.eot');
+                src: url($framework-fonts-path + $textitalic-nap-path + '4690c8b5-a269-4701-af23-40b47cf8500a.eot?#iefix') format('embedded-opentype'),
+                     url($framework-fonts-path + $textitalic-nap-path + 'fcffd624-f5bd-4f58-83b3-a7cdec81e69b.woff') format('woff'),
+                     url($framework-fonts-path + $textitalic-nap-path + 'f7a18fb6-9f66-4cae-8345-926d28e2f15f.ttf')  format('truetype'),
+                     url($framework-fonts-path + $textitalic-nap-path + 'aa7ebf08-11a1-434c-a7c8-6cd637d691dd.svg#'+$ModernNAP-TextItalic) format('svg');
+              }; 
+ 
+ 
+/* BODY COPY STYLES 
+ * Magazine body copy, regular and bold
+ */ 
+ 
+$bodyCopy: 'GillSans',Arial, sans serif;
+$bodyCopyBold: 'GillSansBold,Arial, sans serif';
+$bodyCopyLight: 'GillSansLight',Arial, sans serif;
+$regular-gillsans-path: "gillSans/regular/";
+$bold-gillsans-path: "gillSans/bold/"; 
+$light-gillsans-path: "gillSans/light/"; 
+ 
+@font-face {
+                font-family: $bodyCopy;
+                font-style: normal;
+                font-weight: normal;
+                src: url($framework-fonts-path + $regular-gillsans-path + 'beab4258-af94-4971-a0db-b7bc2bef74bc.eot');
+                src: url($framework-fonts-path + $regular-gillsans-path + 'beab4258-af94-4971-a0db-b7bc2bef74bc.eot?#iefix') format('embedded-opentype'),
+                     url($framework-fonts-path + $regular-gillsans-path + 'cd5a93fc-2bb1-48df-8982-11119cd6e270.woff') format('woff'),
+                     url($framework-fonts-path + $regular-gillsans-path + 'b6bdc93b-2720-4c92-b68d-48499456178e.ttf')  format('truetype'),
+                     url($framework-fonts-path + $regular-gillsans-path + '944cce8d-20bf-41c1-ae29-2bc8199859db.svg#'+$bodyCopy) format('svg');
+              };
+ 
+@font-face {
+                font-family: $bodyCopyBold;
+                font-style: normal;
+                font-weight: bold;
+                src: url($framework-fonts-path + $bold-gillsans-path + '1a6dec8e-26f9-4243-8495-835709538f92.eot');
+                src: url($framework-fonts-path + $bold-gillsans-path + '1a6dec8e-26f9-4243-8495-835709538f92.eot?#iefix') format('embedded-opentype'),
+                     url($framework-fonts-path + $bold-gillsans-path + 'f05272f9-83e3-4de6-8423-5d57f730c87b.woff') format('woff'),
+                     url($framework-fonts-path + $bold-gillsans-path + '33f5d8d9-105f-4a49-9351-74ecae7f4a49.ttf')  format('truetype'),
+                     url($framework-fonts-path + $bold-gillsans-path + 'b56150eb-5caa-4385-b907-373e97ddb2ff.svg#'+$bodyCopyBold) format('svg');
+              };
+
+@font-face {
+                font-family: $bodyCopyLight;
+                font-style: italic;
+                font-weight: normal;
+                src: url($framework-fonts-path + $light-gillsans-path + 'acd8a043-828c-4c2c-98cb-b5224f5d4cdb.eot');
+                src: url($framework-fonts-path + $light-gillsans-path + 'acd8a043-828c-4c2c-98cb-b5224f5d4cdb.eot?#iefix') format('embedded-opentype'),
+                     url($framework-fonts-path + $light-gillsans-path + 'c56da29d-9c5b-4d94-900f-770cde3dd317.woff') format('woff'),
+                     url($framework-fonts-path + $light-gillsans-path + '378182d1-8021-4674-a814-cc8f01f9a937.ttf')  format('truetype'),
+                     url($framework-fonts-path + $light-gillsans-path + 'd8851d95-478d-47a9-a0b0-a8d8e4ca127a.svg#'+$bodyCopyLight) format('svg');
+              };
+
+

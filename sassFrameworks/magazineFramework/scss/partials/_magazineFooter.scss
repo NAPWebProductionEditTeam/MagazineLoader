@@ -1,0 +1,183 @@
+/**
+ * Magazine Footer
+ */
+
+#magazineFooter {
+
+    border-top: 1px solid #cccccc;
+    border-bottom: 1px solid #cccccc;
+    font-family: $ModernNAP-Display;
+    font-size:13px;
+    height: 35px;
+    margin: 0;
+    padding: 0;
+    width: $magazine-container-width; 
+
+    a {
+        cursor: pointer; 
+    }
+
+    ul {
+        margin: 0px;
+        padding: 0px; 
+
+        li {
+            float: left;
+            list-style: none;
+            margin: 0px;
+            padding: 2px 0; 
+            /*width: 303px;*/
+            line-height: 32px;
+        }
+    }
+
+    .button {
+              
+        /* Fixes to avoid colour leaking */
+        -moz-background-clip: padding; 
+        -webkit-background-clip: padding-box; 
+        background-clip: padding-box;
+
+        /* Background gradient + image */
+
+        display: block;
+        float: left;
+        margin: 0px 10px 0px 0px;
+
+      span {
+            background: url($framework-image-path + 'controls/magazineToolbar2.png') no-repeat; 
+            display: block; 
+            height: 29px;
+            width: 29px; 
+            text-indent: -9999px;
+        }
+
+         @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2) {
+            span{
+                background: url($framework-image-path + 'controls/magazineToolbar@2x.png') no-repeat;
+                background-size: 180px 60px;
+            }
+        }
+        
+        &:hover {
+            cursor: pointer;
+        }
+    }
+
+    #button-content span {
+        background-position: 0px 0px; 
+
+        &:hover {
+           background-position: 0px -30px;
+        }
+    }
+
+    #button-archive span {
+        background-position: -30px 0px; 
+
+        &:hover {
+           background-position: -30px -30px;
+        }
+    }
+
+    #button-shop{
+        margin:0 5px 0 0;
+
+        span {
+            background-position: -60px 0px;
+
+            &:hover {
+               background-position: -60px -30px;
+            } 
+        }
+    }
+
+    #button-share span { 
+        background-position: -90px 0px;
+
+        &:hover {
+           background-position: -90px -30px;
+        } 
+    }
+
+    .divider{
+        display:block;
+        border-right:1px solid #ccc;
+        height:10px;
+    }
+
+}
+
+#magazineFooterPagecontrols {
+    width:303px;
+    position: relative; 
+    text-align: center;
+
+    #marker {
+        text-transform:uppercase;
+    }
+
+    .navButton {
+        height: 29px; 
+        width: 20px; 
+        position: absolute; 
+        top: 2px;
+        background: url($framework-image-path + 'controls/magazineToolbar2.png') no-repeat;
+       
+    }
+      @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2) {
+            .navButton{
+                background: url($framework-image-path + 'controls/magazineToolbar@2x.png') no-repeat;
+                background-size: 180px 60px;
+            }
+        }
+
+
+
+    .next {
+        right: 50px; 
+        float: right; 
+        text-indent: -5000px;
+        background-position: -150px 0px; 
+
+        &:hover {
+             background-position: -150px -30px; 
+        }
+    }
+
+    .prev {
+        float: left; 
+        left: 40px; 
+        text-indent: -5000px;
+        background-position: -120px 0px; 
+
+        &:hover {
+            background-position: -120px -30px;
+        }
+    }
+}
+
+#magazineFooterLeft{
+    width:323px;
+
+    .divider{
+        float:left;
+        margin:11px 8px 8px 0
+    }
+
+}
+  
+#magazineFooterRight {
+     width:323px;
+    
+    .button {
+       float: right;
+       margin-left: 0px 0px 0px 10px; 
+    }
+    .divider{
+        float:right;
+        margin:11px 8px 8px 0;
+    }
+}
+
+

@@ -1,0 +1,11 @@
+{
+  "name": "html-magazine",
+  "version": "0.0.1",
+  "description": "run the magazine locally",
+  "dependencies": {
+    "watchr": "2.4.3",
+    "uglify-js": "2.3.4",
+    "nopt" :"2.1.1"
+  },
+  "engine": "node 0.9"
+}

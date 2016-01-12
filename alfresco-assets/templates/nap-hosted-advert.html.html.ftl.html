@@ -1,0 +1,37 @@
+<#assign FLTFile= companyhome.childByNamePath["Sites/alfrescoContent/documentLibrary/nap/templates/globalFunctions/functions.ftl"] > 
+<#include "${FLTFile.nodeRef}" >
+
+<#assign channelSuffix = "opuk">
+<#assign issueVersionNode = companyhome.nodeByReference["workspace://SpacesStore/" + args["issueVersionID"]] > 
+<#if issueVersionNode?exists>
+	<#assign channel = issueVersionNode.properties['napb:channel']?lower_case > 
+	<#switch channel>
+		<#case "am">
+			<#assign channelSuffix = "opus">
+			<#break>
+		<#case "intl">
+			<#break>
+		<#case "apac">
+			<#break>
+	</#switch>
+</#if>
+
+<#assign blockID><#compress>
+<@templateBlockContent templateBlock=space contentName="block-id.txt" />
+</#compress></#assign>
+
+<script type="text/javascript">
+var scripts = document.getElementsByTagName("script");
+var current = scripts[scripts.length - 1];
+var advertURL = 'http://ad.doubleclick.net/adx/netaporter.magazine.${channelSuffix}/${blockID};pos=1;dcopt=ist;;tile=1;sz=950x624;;dcmt=text/xml;ord=9460913255?'
+$(function() {
+	$.ajax({
+		url: advertURL,
+		beforeSend: function(xhr) {
+			xhr.overrideMimeType("text/plain; charset=x-user-defined");
+		}
+	}).done(function(data) {
+		$(current).after(data)
+	});
+});
+</script>

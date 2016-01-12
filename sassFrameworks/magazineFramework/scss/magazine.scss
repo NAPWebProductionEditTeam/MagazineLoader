@@ -1,0 +1,33 @@
+// Magazine variables
+@import "partials/base";
+
+// Load fonts
+@import "partials/fonts";
+
+// framework
+@import "partials/magazineStructure";
+
+// controls
+@import "partials/magazineControls";
+
+// footer
+@import "partials/magazineFooter"; 
+
+// content page
+@import "partials/magazineContentPage"; 
+
+// Chinese content page
+@import "partials/magazineContentPage_zh";
+
+// archive page
+@import "partials/magazineArchivePage"; 
+
+// Chinese archive page
+@import "partials/magazineArchivePage_zh"; 
+
+// interactive
+@import "partials/magazineInteractiveComponents";
+
+// components
+@import "partials/productOverlay";
+

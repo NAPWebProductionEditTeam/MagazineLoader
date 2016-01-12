@@ -1,0 +1,23 @@
+.magazineContent {
+    @import "components/paddingBox";
+    @import "components/btnShopThe";
+    @import "components/credits";
+    @import "components/slugs";
+    @import "components/travelCity";
+}
+
+#magazineFooter .number {
+    font-family: "ModernNAP-Display", Georgia, "Times New Roman", serif;
+    font-size: 13px;
+    letter-spacing: 0
+}
+
+//
+// Old stuff
+//
+
+// style components
+@import "partials/magazineStyleComponents";
+
+// Chinese components
+@import "partials/_magazineStyleComponents_zh";

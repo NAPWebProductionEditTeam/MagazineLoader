@@ -1,0 +1,109 @@
+{
+    "total": 42,
+    "limit": 8,
+    "sort": "desc",
+    "offset": 8,
+    "forward": 26,
+    "next": "/intl/magazineArchive.nap?sort=desc&limit=8&total=42&getBundle=false&offset=16",
+    "back": 8,
+    "prev": "/intl/magazineArchive.nap?sort=desc&limit=8&total=42&getBundle=false&offset=0",
+    "template": "/intl/magazineArchive.nap?sort={sort}&limit={limit}&total={total}getBundle={getBundle}&offset={offset}",
+    "slice": [{
+            "id": "56ddc157-4051-4a22-8ef7-1a3a4f0db9be",
+            "number": 199,
+            "cover": "/alfresco/nap/webAssets/magazine/issues/issue_199/archive_images/cover_en.jpg",
+            "description": "",
+            "shop": "/Shop/List/Shop_The_Music_Issue",
+            "title": "",
+            "date": {
+                "http": "Thu, 13 Jun 2013 00:00:00 BST",
+                "iso": "2013-06-13T00:00:00.000Z",
+                "js": "06/13/2013"
+            }
+        }, {
+            "id": "0576ffb1-f257-4b4c-a846-9820f5898cd7",
+            "number": 198,
+            "cover": "/alfresco/nap/webAssets/magazine/issues/issue_198/archive_images/cover_en.jpg",
+            "description": "",
+            "shop": "/Shop/List/Shop_the_Traveler_Issue",
+            "title": "",
+            "date": {
+                "http": "Thu, 06 Jun 2013 00:00:00 BST",
+                "iso": "2013-06-06T00:00:00.000Z",
+                "js": "06/06/2013"
+            }
+        }, {
+            "id": "5020763c-d513-4d18-a90c-7f37b5f80976",
+            "number": 197,
+            "cover": "/alfresco/nap/webAssets/magazine/issues/issue_197/archive_images/cover_en.jpg",
+            "description": "",
+            "shop": "/Shop/List/Shop_The_Body_Issue",
+            "title": "",
+            "date": {
+                "http": "Thu, 30 May 2013 00:00:00 BST",
+                "iso": "2013-05-30T00:00:00.000Z",
+                "js": "05/30/2013"
+            }
+        }, {
+            "id": "f46eff58-c1cc-4cd1-b3d2-71f2ba6a8b1e",
+            "number": 196,
+            "cover": "/alfresco/nap/webAssets/magazine/issues/issue_196/archive_images/cover_en.jpg",
+            "description": "",
+            "shop": "/Shop/List/Shop_the_Women_In_Hollywood_Issue",
+            "title": "",
+            "date": {
+                "http": "Thu, 23 May 2013 00:00:00 BST",
+                "iso": "2013-05-23T00:00:00.000Z",
+                "js": "05/23/2013"
+            }
+        }, {
+            "id": "fb281f46-d493-42de-bc4c-2a48660b5b7f",
+            "number": 195,
+            "cover": "/alfresco/nap/webAssets/magazine/issues/issue_195/archive_images/en/cover_en.jpg",
+            "description": "",
+            "shop": "/Shop/List/Shop_The_Riviera_Issue",
+            "title": "",
+            "date": {
+                "http": "Thu, 16 May 2013 00:00:00 BST",
+                "iso": "2013-05-16T00:00:00.000Z",
+                "js": "05/16/2013"
+            }
+        }, {
+            "id": "2b4e5237-38e2-4a8f-8d3b-8bf2fbf6dea8",
+            "number": 194,
+            "cover": "/alfresco/nap/webAssets/magazine/issues/issue_194/archieve_images/en/issue_194_en.jpg",
+            "description": "",
+            "shop": "/Shop/List/The_Graphic_Issue",
+            "title": "",
+            "date": {
+                "http": "Thu, 09 May 2013 00:00:00 BST",
+                "iso": "2013-05-09T00:00:00.000Z",
+                "js": "05/09/2013"
+            }
+        }, {
+            "id": "c1d40ff0-8c01-4450-9c14-949eb58b5ee8",
+            "number": 193,
+            "cover": "/alfresco/nap/webAssets/magazine/issues/issue_193/archive_image/en/cover_ARCHIVE_en.jpg",
+            "description": "",
+            "shop": "/Shop/List/The_Luxe_Boho_Issue",
+            "title": "",
+            "date": {
+                "http": "Thu, 02 May 2013 00:00:00 BST",
+                "iso": "2013-05-02T00:00:00.000Z",
+                "js": "05/02/2013"
+            }
+        }, {
+            "id": "42d4c183-6a74-4e29-b94c-6ef868d23e45",
+            "number": 192,
+            "cover": "/alfresco/nap/webAssets/magazine/issues/issue_192/archive_image/en/issue192.jpg",
+            "description": "",
+            "shop": "/Shop/List/The_All-American_Issue",
+            "title": "",
+            "date": {
+                "http": "Thu, 25 Apr 2013 00:00:00 BST",
+                "iso": "2013-04-25T00:00:00.000Z",
+                "js": "04/25/2013"
+            }
+        }
+    ]
+}

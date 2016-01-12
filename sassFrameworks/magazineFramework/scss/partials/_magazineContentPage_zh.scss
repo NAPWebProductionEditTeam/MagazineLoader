@@ -1,0 +1,98 @@
+/**
+ * Magazine Contents Page
+ */
+
+body.lang-zh #main #content {
+#contents {
+    background-color: #FFFFFF;
+    width: $magazine-container-width;
+    position: absolute;
+    top: 0; 
+    z-index: 4998;
+	
+    #contentsHeading{
+		text-align: center;
+		margin-bottom: 20px;
+		margin-top:30px;
+		padding-top:66px;		
+		background: url($framework-image-path + 'styleGuide/h2_background_zh.jpg') no-repeat 50% 0%;
+
+		*{
+			font-family: $ModernNAP-Display
+		}
+		h2{
+			text-transform: uppercase;
+			font-weight: normal;
+			height: auto;
+			font-size: 21px; 
+			line-height: 30px;
+			display:inline;
+		}
+		span{
+			font-size: 21px;
+			line-height: 30px;
+			font-style:italic;
+		}		
+	}
+
+	@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2) {
+        #contentsHeading{
+            background: url($framework-image-path + 'styleGuide/h2_background_zh@2x.jpg') no-repeat 50% 0%;
+            background-size: 220px 62px;
+        }
+    }
+	#issue-features {
+
+		padding-left: 80px;
+		padding-right: 36px;
+		padding-top:4px;
+
+		.feature {
+			cursor: pointer;
+			display: block;
+			float: left;
+			height: 144px;
+			margin: 8px 10px 0 0;
+			overflow: hidden;
+			text-decoration: none; 
+			width: 190px;
+			
+			img {
+				height: 123px;
+				margin-bottom: 4px;
+				width: 186px;
+				border:1px solid #efefef;
+				@include box-shadow(#bdbdbd 1px 1px 2px 0px);
+			} 
+			.featureTitle, .featureDescription {
+				display: block;
+				font-family: $bodyCopy;
+				font-size: 12px;
+				text-align: center;
+				text-transform: uppercase;
+				width: inherit;
+			}
+			.featureDescription {
+				display: none;
+			}
+			
+		}
+	}
+}
+
+/* new content page */
+.contentsPageHolder {
+	h3 {
+		font-size:17px;
+		line-height:18px;
+	}
+}
+
+.issueOpenerHeader h3 {
+    font-family: $ModernNAP-Display;
+    font-size: 17px;
+    letter-spacing: 2px;
+    line-height: 20px;
+    text-transform: uppercase;
+}
+}

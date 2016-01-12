@@ -1,0 +1,7 @@
+@import "layouts/container";
+@import "layouts/grid";
+
+.magazineContent {
+    @import "layouts/padding";
+    @import "layouts/edLetter";
+}
